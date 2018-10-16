@@ -9,14 +9,16 @@
 // #import是预处理命令，告诉编译器在编译之前需要引入以下的头文件
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+// extern代表外部变量, 声明一个外部变量，declaration
+extern int intVariable;
 
 //一个程序的主函数，也是程序的入口
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         
-        int i, j, k;
-        char c, ch;
-        float f, fNumber;
+        int i;
+        char c;
+        float f;
         double d;
         NSLog(@"%d", i);
         NSLog(@"%c", c);
@@ -28,7 +30,10 @@ int main(int argc, char * argv[]) {
         }
         NSLog(@"%f", f);
         NSLog(@"%f", d);
-        
+        NSLog(@"////////////////////separator//////////////////////");
+        // 定义一个局部变量， definition
+        intVariable = 10;
+        NSLog(@"%d", intVariable);
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
