@@ -10,6 +10,9 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "Member.h"
+#import "Human.h"
+#import "Female.h"
+#import "Male.h"
 
 //一个程序的主函数，也是程序的入口
 int main(int argc, char * argv[]) {
@@ -32,6 +35,20 @@ int main(int argc, char * argv[]) {
         
         BOOL isMember = [member isMemberOfClass:[Member class]];
         NSLog(@"member isMemberOfClass of Member %@", isMember ? @"Yes" : @"No");
+        
+        /*
+         There is two kind of human in the earth, female and male
+         So, if female get a bag, they will laugh and if male get a pair of sneaker, they will laugh too.
+         */
+        
+        Human *human = [[Human alloc] init];
+        Female *female = [[Female alloc] init];
+        Male *male = [[Male alloc] init];
+        
+        // when god create the human, they laugh
+        [human laugh];
+        [female laugh];
+        [male laugh];
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
