@@ -34,6 +34,9 @@ int main(int argc, char * argv[]) {
         NSString *name = [array objectAtIndex:0].UserName;
         NSLog(@"foreach name's age is %@", name);
         
+        // 定义数字型数组,不能使用基本的值类型
+        NSArray<NSNumber*> *intArray = @[@123, @12345];
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
