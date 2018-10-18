@@ -37,6 +37,8 @@ int main(int argc, char * argv[]) {
         // 定义数字型数组,不能使用基本的值类型
         NSArray<NSNumber*> *intArray = @[@123, @12345];
         
+        NSArray *numArray = @[@123.4, @1234];
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
