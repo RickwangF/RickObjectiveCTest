@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) double height;
 @property (nonatomic, assign) double weight;
 
-@property (nonatomic, strong) NSArray *snacks;
+@property (nonatomic, strong) NSMutableArray *snacks;
 
 - (instancetype)init;
 

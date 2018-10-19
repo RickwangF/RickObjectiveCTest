@@ -17,7 +17,7 @@
         self.name = @"human";
         self.height = 160.0;
         self.weight = 50.5;
-        self.snacks = [[NSMutableArray alloc] initWithObjects: @"crisp", nil];
+        self.snacks = [[NSMutableArray alloc] initWithObjects: [[NSMutableString alloc] initWithString:@"potato crisp"], nil];
     }
     return self;
 }

@@ -10,8 +10,22 @@
 
 @implementation Female
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
 - (void)laugh{
-    NSLog(@"呵呵呵呵");
+    if (self.bags != nil && self.bags.count > 0) {
+        NSLog(@"呵呵呵呵");
+    }
+    else{
+        [super laugh];
+    }
 }
 
 @end

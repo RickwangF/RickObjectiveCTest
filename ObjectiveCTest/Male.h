@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Male : Human
 
-@property (nonatomic, strong) NSArray* sneakers;
+@property (nonatomic, strong) NSMutableArray* sneakers;
+
+-(instancetype)init;
 
 @end
 
