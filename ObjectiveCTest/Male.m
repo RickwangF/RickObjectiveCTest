@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        
+        self.sneakers = [[NSMutableArray alloc] initWithObjects:[[NSMutableString alloc] initWithString: @"air jordan"], nil];
     }
     return self;
 }
@@ -26,6 +26,17 @@
     else{
         [super laugh];
     }
+}
+
+-(id)copyWithZone:(NSZone *)zone{
+    Male* copy = [super copyWithZone:zone];
+    NSMutableArray *sneakerArray = [[NSMutableArray alloc] init];
+    for (NSString *string in self.sneakers) {
+        NSMutableString *sneakerString = [[NSMutableString alloc] initWithString:string];
+        [sneakerArray addObject:sneakerString];
+    }
+    copy.sneakers = sneakerArray;
+    return copy;
 }
 
 @end

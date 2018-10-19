@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Human : NSObject
+@interface Human : NSObject <NSCopying>
 
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSMutableString *name;
 @property (nonatomic, assign) double height;
 @property (nonatomic, assign) double weight;
 

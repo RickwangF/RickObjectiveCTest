@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        self.name = @"human";
+        self.name = [[NSMutableString alloc] initWithString: @"human"];
         self.height = 160.0;
         self.weight = 50.5;
         self.snacks = [[NSMutableArray alloc] initWithObjects: [[NSMutableString alloc] initWithString:@"potato crisp"], nil];
@@ -26,4 +26,14 @@
     NSLog(@"......");
 }
 
+- (nonnull id)copyWithZone:(nullable NSZone *)zone {
+    id copy = [[[self class] allocWithZone:zone] init];
+    if (copy == nil) {
+        copy = [[Human allocWithZone:zone] init];
+    }
+    return copy;
+}
+
 @end
+
+

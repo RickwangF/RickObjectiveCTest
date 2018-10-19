@@ -18,106 +18,117 @@
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         
-        Member *member = [[Member alloc] init];
-        member.name = @"Rick";
-        NSLog(@"member's name is %@", member.name);
+//        NSNumber *num = [[NSNumber alloc] initWithInt:1];
+//        NSNumber *copyNum = [num copy];
+//
+//        NSLog(@"num is %@, copyNum is %@", num, copyNum);
+//        NSLog(@"num pointer is %p, copyNum pointer is %p", num, copyNum);
+//
+//        NSString *nsString = @"rick";
+//        NSString *copyString = [nsString copy];
+//        NSMutableString *muCopyString = [nsString mutableCopy];
+//        NSLog(@"nsString is %@, copyString is %@, muCopyString is %@", nsString, copyString, muCopyString);
+//        // %p shows pointer address, &nsString shows heap address
+//        NSLog(@"nsString pointer is %p, copyString pointer is %p, muCopyString pointer is %p", nsString, copyString, muCopyString);
+//
+//        [muCopyString appendString:@"123"];
+//        NSLog(@"nsString is %@, copyString is %@, muCopyString is %@", nsString, copyString, muCopyString);
+//
+//        NSMutableString *muString = [[NSMutableString alloc] initWithString: @"Wang"];
+//        NSString *copyMuString = [muString copy];
+//        NSMutableString *muCopyMuString = [muString mutableCopy];
+//
+//        NSLog(@"muString is %@, copyMuString is %@, muCopyMuString is %@", muString, copyMuString, muCopyMuString);
+//        NSLog(@"muString pointer is %p, copyMuString pointer is %p, muCopyMuString pointer is %p", muString, copyMuString, muCopyMuString);
+//
+//        [muString appendString:@"456"];
+//        NSLog(@"muString is %@, copyMuString is %@, muCopyMuString is %@", muString, copyMuString, muCopyMuString);
         
-        member.age = 20;
-        NSLog(@"member's age is %d", member.age);
+        //////////////////////////////////separator/////////////////////////////////////////
         
-        // 判断实例是否是该类的实例，或者是其子类的实例
-        BOOL isKind = [member isKindOfClass: [NSObject class]];
-        NSLog(@"member isKindOfClass of NSObject %@", isKind ? @"Yes" : @"No");
+//        NSArray *array = @[[[NSMutableString alloc] initWithString: @"rick"],[[NSMutableString alloc] initWithString: @"wang"]];
+//        NSArray *copyArray = [array copy];
+//        NSMutableArray *muCopyArray = [array mutableCopy];
+//        NSLog(@"array is %@, copyArray is %@, muCopyArray is %@", array, copyArray, muCopyArray);
+//        NSLog(@"array pointer is %p, copyArray pointer is %p, muCopyArray pointer is %p", array, copyArray, muCopyArray);
+//
+//        NSMutableString *arrMuString = muCopyArray[0];
+//        [arrMuString appendString:@"rick"];
+//        NSLog(@"after muCopyArray array is %@, copyArray is %@, muCopyArray is %@", array, copyArray, muCopyArray);
+//
+//        NSMutableString *muMuCopyString = [[muCopyArray objectAtIndex:0] mutableCopy];
+//        [muMuCopyString appendString: @"123"];
+//        [muCopyArray replaceObjectAtIndex:0 withObject:muMuCopyString];
+//        NSLog(@"after muCopyArray array is %@, copyArray is %@, muCopyArray is %@", array, copyArray, muCopyArray);
         
-        // 判断实例是否是该类的实例
-        BOOL isNSObj = [member isMemberOfClass:[NSObject class]];
-        NSLog(@"member isMemberOfClass of NSObject %@", isNSObj ? @"Yes" : @"No");
+        ////////////////////////////////separator//////////////////////////////////////
         
-        BOOL isMember = [member isMemberOfClass:[Member class]];
-        NSLog(@"member isMemberOfClass of Member %@", isMember ? @"Yes" : @"No");
+//        NSMutableArray *muArray = [[NSMutableArray alloc] initWithArray: @[[[NSMutableString alloc] initWithString: @"rick"],[[NSMutableString alloc] initWithString: @"wang"]]];
+//        NSArray *muArrayCopy = [muArray copy];
+//        NSMutableArray *muArrayMuCopy = [muArray mutableCopy];
+//
+//        NSLog(@"muArray is %@, muArrayCopy is %@, muArrayMuCopy is %@", muArray, muArrayCopy, muArrayMuCopy);
+//        NSLog(@"muArray pointer is %p, muArrayCopy pointer is %p, muArrayMuCopy pointer is %p", muArray, muArrayCopy, muArrayMuCopy);
+//
+//        NSMutableString *muString = muArray[0];
+//        [muString appendString:@"wang"];
+//        NSLog(@"muArray is %@, muArrayCopy is %@, muArrayMuCopy is %@", muArray, muArrayCopy, muArrayMuCopy);
+//
+//        NSMutableArray *muArraryGov = [[NSMutableArray alloc] initWithArray: muArray copyItems:true];
+//        NSLog(@"muArray is %@, muArrayGov is %@", muArray, muArraryGov);
+//        NSLog(@"muArray pointer is %p, muArrayGov pointer is %p", muArray, muArraryGov);
+//
+//        for (NSMutableString *string in muArray) {
+//            NSLog(@"string from muArray is %p", string);
+//        }
+//
+//        for (NSMutableString *string in muArraryGov) {
+//            NSLog(@"string from muArrayGov is %p", string);
+//        }
+//
+//        [muString appendString:@"123123"];
+//        NSLog(@"muArray is %@, muArraryGov is %@", muArray, muArraryGov);
         
-        /*
-         There is two kind of human in the earth, female and male
-         So, if female get a bag, they will laugh and if male get a pair of sneaker, they will laugh too.
-         */
+        ///////////////////////////////separator///////////////////////////////////
+//        NSArray *array = @[@"rick",@"wang"];
+//        NSArray *copyArray = [[NSArray alloc] initWithArray:array copyItems:true];
+//
+//        NSLog(@"array is %@, copyArray is %@", array, copyArray);
+//        NSLog(@"array pointer is %p, copyArray pointer is %p", array, copyArray);
+//
+//        for (NSMutableString *string in array) {
+//            NSLog(@"string from array is %p", string);
+//        }
+//
+//        for (NSMutableString *string in copyArray) {
+//            NSLog(@"string from copyArray is %p", string);
+//        }
         
-        Human *human = [[Human alloc] init];
-        Female *female = [[Female alloc] init];
-        Male *male = [[Male alloc] init];
-        
-        // when god create the human, they laugh
-        [human laugh];
-        [female laugh];
-        [male laugh];
-        
-        NSLog(@"%@", female.bags);
-        NSLog(@"%@", male.sneakers);
-        
-        // when give a bag to female
-        female.bags = [[NSMutableArray alloc] initWithObjects: [[NSMutableString alloc] initWithString: @"chanel"], nil];
-        [female laugh];
-        
-        // when give a pair of sneakers to male
-        male.sneakers = [[NSMutableArray alloc] initWithObjects: [[NSMutableString alloc] initWithString: @"air jordan 1"], nil];
-        [male laugh];
-        
-        NSLog(@"human print his snacks");
-        for (NSMutableString* snack in human.snacks) {
-            NSLog(@"%@", snack);
-        }
-        
-        NSLog(@"female print her snacks");
-        for (NSMutableString* snack in female.snacks) {
-            NSLog(@"%@", snack);
-        }
-        
-        NSLog(@"male print his snacks");
-        for (NSMutableString* snack in male.snacks) {
-            NSLog(@"%@", snack);
-        }
-        
-        NSMutableArray *snackArray = [[NSMutableArray alloc] initWithObjects: [[NSMutableString alloc] initWithString:@"ice cream"], [[NSMutableString alloc] initWithString:@"potato crisp"], nil];
-        human.snacks = snackArray;
-        female.snacks = [snackArray mutableCopy];
-        male.snacks = [snackArray mutableCopy];
-        
-        NSMutableString *snackOne = female.snacks[0];
-        [snackOne appendString: @"oreo"];
+        ///////////////////////////////separaptor//////////////////////////////////
         
         
-        NSLog(@"human print his snacks after female's snack update");
-        for (NSMutableString* snack in human.snacks) {
-            NSLog(@"%@", snack);
-        }
+        Human *human1 = [[Human alloc] init];
+        Human *human2 = [human1 copy];
+        NSLog(@"human1 is %@, human2 is %@", human1, human2);
+        NSLog(@"human1's address is %p, human2's address is %p", human1, human2);
+        NSLog(@"human1's name is %p, human2's name is %p", human1.name, human2.name);
+        NSLog(@"human1's snacks is %@, human2's snacks is %@", human1.snacks, human2.snacks);
+        NSLog(@"human1's snacks's address is %p, human2's snacks's address is %p", human1.snacks, human2.snacks);
         
-        NSLog(@"female print her snacks after female's snack update");
-        for (NSMutableString* snack in female.snacks) {
-            NSLog(@"%@", snack);
-        }
+        NSMutableString *crisp = human1.snacks[0];
+        [crisp appendString:@"123"];
+        NSLog(@"human1's snacks is %@, human2's snacks is %@", human1.snacks, human2.snacks);
         
-        NSLog(@"male print his snacks after female's snack update");
-        for (NSMutableString* snack in male.snacks) {
-            NSLog(@"%@", snack);
-        }
+        //////////////////////////////separator////////////////////////////////////
+        Male *male1 = [[Male alloc] init];
+        Male *male2 = [male1 copy];
+        NSLog(@"male1 is %@, male2 is %@", male1, male2);
+        NSLog(@"male1's sneakers is %@, male2's sneakers is %@", male1.sneakers, male2.sneakers);
+        NSLog(@"male1's sneakers address is %p, male2's sneakers address is %p", male1.sneakers, male2.sneakers);
         
-        NSMutableString *snackTwo = [[NSMutableString alloc] initWithString: male.snacks[0]];
-        [snackTwo appendString: @"123"];
-        [male.snacks replaceObjectAtIndex:0 withObject: snackTwo];
-        
-        NSLog(@"human print his snacks after male's snack update");
-        for (NSMutableString* snack in human.snacks) {
-            NSLog(@"%@", snack);
-        }
-        
-        NSLog(@"female print her snacks after male's snack update");
-        for (NSMutableString* snack in female.snacks) {
-            NSLog(@"%@", snack);
-        }
-        
-        NSLog(@"male print his snacks after male's snack update");
-        for (NSMutableString* snack in male.snacks) {
-            NSLog(@"%@", snack);
-        }
+        NSMutableString *sneaker = male1.sneakers[0];
+        [sneaker appendString: @"one"];
+        NSLog(@"male1's sneakers is %@, male2's sneakers is %@", male1.sneakers, male2.sneakers);
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
