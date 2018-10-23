@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, weak) UIButton *startBtn;
+
+-(void)showStrings;
 
 @end
 

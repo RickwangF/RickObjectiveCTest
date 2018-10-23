@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F225A99217DBA4700F504E7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F225A98217DBA4700F504E7 /* LoginViewController.m */; };
 		0F6ED0122176C93E0060AAE9 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6ED0112176C93E0060AAE9 /* Member.m */; };
 		0F6ED01A21785B0B0060AAE9 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6ED01921785B0B0060AAE9 /* Human.m */; };
 		0F6ED01D21785BEA0060AAE9 /* Female.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6ED01C21785BEA0060AAE9 /* Female.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F225A97217DBA4700F504E7 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0F225A98217DBA4700F504E7 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0F6ED0102176C93E0060AAE9 /* Member.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
 		0F6ED0112176C93E0060AAE9 /* Member.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
 		0F6ED01821785B0B0060AAE9 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				0F6ED01C21785BEA0060AAE9 /* Female.m */,
 				0F6ED01E21785C670060AAE9 /* Male.h */,
 				0F6ED01F21785C670060AAE9 /* Male.m */,
+				0F225A97217DBA4700F504E7 /* LoginViewController.h */,
+				0F225A98217DBA4700F504E7 /* LoginViewController.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F225A99217DBA4700F504E7 /* LoginViewController.m in Sources */,
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
 				0F6ED01A21785B0B0060AAE9 /* Human.m in Sources */,
