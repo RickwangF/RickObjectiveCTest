@@ -10,6 +10,7 @@
 		0F225A9C217F0A9000F504E7 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F225A9B217F0A9000F504E7 /* GCDViewController.m */; };
 		0F225A9F217FFFFB00F504E7 /* DQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F225A9E217FFFFB00F504E7 /* DQMainViewController.m */; };
 		0F225AA22180054500F504E7 /* DQCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F225AA12180054500F504E7 /* DQCViewController.m */; };
+		0F225AA821803D5900F504E7 /* DGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F225AA721803D5900F504E7 /* DGViewController.m */; };
 		0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48AD217579480042FD3C /* AppDelegate.m */; };
 		0F8C48B1217579480042FD3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48B0217579480042FD3C /* ViewController.m */; };
 		0F8C48B4217579480042FD3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B2217579480042FD3C /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 		0F225A9E217FFFFB00F504E7 /* DQMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DQMainViewController.m; sourceTree = "<group>"; };
 		0F225AA02180054500F504E7 /* DQCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DQCViewController.h; sourceTree = "<group>"; };
 		0F225AA12180054500F504E7 /* DQCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DQCViewController.m; sourceTree = "<group>"; };
+		0F225AA621803D5900F504E7 /* DGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGViewController.h; sourceTree = "<group>"; };
+		0F225AA721803D5900F504E7 /* DGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGViewController.m; sourceTree = "<group>"; };
 		0F8C48A9217579480042FD3C /* ObjectiveCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8C48AC217579480042FD3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F8C48AD217579480042FD3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 				0F225A9E217FFFFB00F504E7 /* DQMainViewController.m */,
 				0F225AA02180054500F504E7 /* DQCViewController.h */,
 				0F225AA12180054500F504E7 /* DQCViewController.m */,
+				0F225AA621803D5900F504E7 /* DGViewController.h */,
+				0F225AA721803D5900F504E7 /* DGViewController.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
 				0F225AA22180054500F504E7 /* DQCViewController.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
+				0F225AA821803D5900F504E7 /* DGViewController.m in Sources */,
 				0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */,
 				0F225A9C217F0A9000F504E7 /* GCDViewController.m in Sources */,
 				0F225A9F217FFFFB00F504E7 /* DQMainViewController.m in Sources */,
