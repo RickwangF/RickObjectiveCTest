@@ -13,7 +13,6 @@
 //一个程序的主函数，也是程序的入口
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
