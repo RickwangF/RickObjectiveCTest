@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F34AA3F218432FE00FBF938 /* AFNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F34AA3E218432FE00FBF938 /* AFNViewController.m */; };
+		0F34AA422184395400FBF938 /* JSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F34AA412184395400FBF938 /* JSONResponse.m */; };
 		0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48AD217579480042FD3C /* AppDelegate.m */; };
 		0F8C48B1217579480042FD3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48B0217579480042FD3C /* ViewController.m */; };
 		0F8C48B4217579480042FD3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B2217579480042FD3C /* Main.storyboard */; };
 		0F8C48B6217579490042FD3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B5217579490042FD3C /* Assets.xcassets */; };
 		0F8C48B9217579490042FD3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B7217579490042FD3C /* LaunchScreen.storyboard */; };
 		0F8C48BC217579490042FD3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48BB217579490042FD3C /* main.m */; };
+		0FB575B92182C155000A1DDD /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB575B82182C155000A1DDD /* LoginModel.m */; };
 		79984D7DF2A35671359F1B4E /* Pods_ObjectiveCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C51427256CE75A12DD1D7504 /* Pods_ObjectiveCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F34AA3D218432FE00FBF938 /* AFNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNViewController.h; sourceTree = "<group>"; };
+		0F34AA3E218432FE00FBF938 /* AFNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNViewController.m; sourceTree = "<group>"; };
+		0F34AA402184395400FBF938 /* JSONResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONResponse.h; sourceTree = "<group>"; };
+		0F34AA412184395400FBF938 /* JSONResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONResponse.m; sourceTree = "<group>"; };
 		0F8C48A9217579480042FD3C /* ObjectiveCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8C48AC217579480042FD3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F8C48AD217579480042FD3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,6 +34,8 @@
 		0F8C48B8217579490042FD3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F8C48BA217579490042FD3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F8C48BB217579490042FD3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FB575B72182C155000A1DDD /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		0FB575B82182C155000A1DDD /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		7DD86D4D952C413B7ACF0DF0 /* Pods-ObjectiveCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCTest/Pods-ObjectiveCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C51427256CE75A12DD1D7504 /* Pods_ObjectiveCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectiveCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE2CC44EB9558FB4C2B3274 /* Pods-ObjectiveCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCTest/Pods-ObjectiveCTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +83,12 @@
 				0F8C48B7217579490042FD3C /* LaunchScreen.storyboard */,
 				0F8C48BA217579490042FD3C /* Info.plist */,
 				0F8C48BB217579490042FD3C /* main.m */,
+				0FB575B72182C155000A1DDD /* LoginModel.h */,
+				0FB575B82182C155000A1DDD /* LoginModel.m */,
+				0F34AA3D218432FE00FBF938 /* AFNViewController.h */,
+				0F34AA3E218432FE00FBF938 /* AFNViewController.m */,
+				0F34AA402184395400FBF938 /* JSONResponse.h */,
+				0F34AA412184395400FBF938 /* JSONResponse.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -209,7 +224,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
+				0F34AA3F218432FE00FBF938 /* AFNViewController.m in Sources */,
+				0FB575B92182C155000A1DDD /* LoginModel.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
+				0F34AA422184395400FBF938 /* JSONResponse.m in Sources */,
 				0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
