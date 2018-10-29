@@ -36,10 +36,12 @@ static AFHTTPSessionManager* httpManager = nil;
     // Do any additional setup after loading the view.
 }
 
+// 简单初始化方法
 -(void)initManager{
-    
+    httpManager = [AFHTTPSessionManager manager];
 }
 
+// 可配置的初始化方法
 -(void)initManagerWithConfig{
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     config.timeoutIntervalForRequest = 5.0;
