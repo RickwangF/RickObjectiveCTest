@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F264D9C2186D615008EF2D7 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F264D9B2186D615008EF2D7 /* UserModel.m */; };
+		0F264D9F2186D9DE008EF2D7 /* LoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F264D9E2186D9DE008EF2D7 /* LoginResult.m */; };
+		0F264DA22186DC98008EF2D7 /* MoocContainerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F264DA12186DC98008EF2D7 /* MoocContainerModel.m */; };
+		0F264DA52186DCAF008EF2D7 /* MoocModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F264DA42186DCAF008EF2D7 /* MoocModel.m */; };
 		0F34AA3F218432FE00FBF938 /* AFNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F34AA3E218432FE00FBF938 /* AFNViewController.m */; };
 		0F34AA422184395400FBF938 /* JSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F34AA412184395400FBF938 /* JSONResponse.m */; };
 		0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48AD217579480042FD3C /* AppDelegate.m */; };
@@ -20,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F264D9A2186D615008EF2D7 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		0F264D9B2186D615008EF2D7 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		0F264D9D2186D9DE008EF2D7 /* LoginResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginResult.h; sourceTree = "<group>"; };
+		0F264D9E2186D9DE008EF2D7 /* LoginResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginResult.m; sourceTree = "<group>"; };
+		0F264DA02186DC98008EF2D7 /* MoocContainerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoocContainerModel.h; sourceTree = "<group>"; };
+		0F264DA12186DC98008EF2D7 /* MoocContainerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoocContainerModel.m; sourceTree = "<group>"; };
+		0F264DA32186DCAF008EF2D7 /* MoocModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoocModel.h; sourceTree = "<group>"; };
+		0F264DA42186DCAF008EF2D7 /* MoocModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoocModel.m; sourceTree = "<group>"; };
 		0F34AA3D218432FE00FBF938 /* AFNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNViewController.h; sourceTree = "<group>"; };
 		0F34AA3E218432FE00FBF938 /* AFNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNViewController.m; sourceTree = "<group>"; };
 		0F34AA402184395400FBF938 /* JSONResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONResponse.h; sourceTree = "<group>"; };
@@ -89,6 +101,14 @@
 				0F34AA3E218432FE00FBF938 /* AFNViewController.m */,
 				0F34AA402184395400FBF938 /* JSONResponse.h */,
 				0F34AA412184395400FBF938 /* JSONResponse.m */,
+				0F264D9A2186D615008EF2D7 /* UserModel.h */,
+				0F264D9B2186D615008EF2D7 /* UserModel.m */,
+				0F264D9D2186D9DE008EF2D7 /* LoginResult.h */,
+				0F264D9E2186D9DE008EF2D7 /* LoginResult.m */,
+				0F264DA02186DC98008EF2D7 /* MoocContainerModel.h */,
+				0F264DA12186DC98008EF2D7 /* MoocContainerModel.m */,
+				0F264DA32186DCAF008EF2D7 /* MoocModel.h */,
+				0F264DA42186DCAF008EF2D7 /* MoocModel.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -223,10 +243,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F264D9F2186D9DE008EF2D7 /* LoginResult.m in Sources */,
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
+				0F264DA22186DC98008EF2D7 /* MoocContainerModel.m in Sources */,
 				0F34AA3F218432FE00FBF938 /* AFNViewController.m in Sources */,
+				0F264D9C2186D615008EF2D7 /* UserModel.m in Sources */,
 				0FB575B92182C155000A1DDD /* LoginModel.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
+				0F264DA52186DCAF008EF2D7 /* MoocModel.m in Sources */,
 				0F34AA422184395400FBF938 /* JSONResponse.m in Sources */,
 				0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */,
 			);
