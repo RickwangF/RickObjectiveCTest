@@ -19,7 +19,7 @@
 @property (nonatomic) UIButton *loginBtn;
 @property (nonatomic) UIButton *resetBtn;
 @property (nonatomic) UIButton *requestBtn;
-
+@property (nonatomic) UIButton *uploadBtn;
 @property (nonatomic) NSMutableArray *moocArray;
 
 -(void) login;
@@ -34,13 +34,15 @@
 
 -(void) resetHttpManager;
 
+-(void) uploadAvatar;
+
 @end
 
 @implementation CommonRequestViewController
 
 NSString *token = @"";
 
-@synthesize moocArray, loginBtn, resetBtn, requestBtn;
+@synthesize moocArray, loginBtn, resetBtn, requestBtn, uploadBtn;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -75,6 +77,12 @@ NSString *token = @"";
     [requestBtn addTarget:self action:@selector(editRealName) forControlEvents: UIControlEventTouchUpInside];
     [self.view addSubview:requestBtn];
     
+    uploadBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 35)];
+    [uploadBtn setTitle:@"上传" forState:UIControlStateNormal];
+    [uploadBtn setTitleColor:[UIColor blueColor] forState: UIControlStateNormal];
+    [uploadBtn addTarget:self action:@selector(uploadAvatar) forControlEvents: UIControlEventTouchUpInside];
+    [self.view addSubview:uploadBtn];
+    
     [loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_top).offset(100);
         make.centerX.equalTo(self.view.mas_centerX);
@@ -89,6 +97,12 @@ NSString *token = @"";
     
     [requestBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.resetBtn.mas_bottom).offset(20);
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.height.equalTo(@35);
+    }];
+    
+    [uploadBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.requestBtn.mas_bottom).offset(20);
         make.centerX.equalTo(self.view.mas_centerX);
         make.height.equalTo(@35);
     }];
@@ -150,6 +164,25 @@ NSString *token = @"";
         
     } failure:^(NSString * _Nonnull error) {
         NSLog(@"edit realName request fail with a error, %@", error);
+    }];
+}
+
+- (void)uploadAvatar{
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:token, @"token", nil];
+    [CommonRequestHandler upload:@"/AppV2/Account/SaveAvatar" withParams: params bodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        
+        UIImage *image = [UIImage imageNamed:@"daye.jpg"];
+        NSData *imageData = UIImageJPEGRepresentation(image, 1.0);
+        [formData appendPartWithFileData:imageData name:@"fileAvatar" fileName:@"daye.jpg" mimeType:@"image/jpeg"];
+        
+    } success:^(id  _Nullable responseObject) {
+        
+        if (responseObject != nil) {
+            NSLog(@"upload avatar success with %@", responseObject);
+        }
+        
+    } failure:^(NSString * _Nonnull error) {
+        NSLog(@"upload avatar request fail with a error, %@", error);
     }];
 }
 

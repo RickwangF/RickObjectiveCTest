@@ -118,4 +118,42 @@ static AFHTTPSessionManager* httpManager;
     }];
 }
 
++(void)upload:(NSString *)url withParams:(id)parameters bodyWithBlock:(void (^)(id<AFMultipartFormData> _Nonnull))constructingBlock success:(void (^)(id _Nullable))success failure:(void (^)(NSString * _Nonnull))failure{
+    
+    [httpManager POST:url parameters:parameters constructingBodyWithBlock:constructingBlock progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (responseObject == nil ) {
+            failure(@"请求出错，没有返回任何数据");
+            return;
+        }
+        
+        NSInteger code = [[responseObject objectForKey: @"Code"] integerValue];
+        if (code > 0) {
+            NSString *msg = [responseObject objectForKey: @"Msg"];
+            if (msg != nil) {
+                failure([NSString stringWithFormat: @"请求错误，%@", msg]);
+            }
+            else{
+                failure(@"请求出错，未知的错误原因");
+            }
+            return;
+        }
+        
+        success([responseObject objectForKey: @"Data"]);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (error.domain) {
+            NSLog(@"request error domain is %@", error.domain);
+        }
+        
+        if (error.code > 0){
+            NSLog(@"request error code is %ld", (long)error.code);
+        }
+        
+        failure(error.localizedDescription);
+        
+    }];
+}
+
 @end

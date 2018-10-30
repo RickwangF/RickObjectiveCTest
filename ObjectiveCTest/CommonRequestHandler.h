@@ -32,6 +32,12 @@ withParams:(nullable id)parameters
     success:(nullable void (^)(_Nullable id responseObject))success
     failure:(nullable void (^)(NSString *error))failure;
 
++(void)upload:(NSString *)url
+   withParams:(nullable id)parameters
+bodyWithBlock:(nullable void(^)(id <AFMultipartFormData>formData))constructingBlock
+      success:(nullable void(^)(_Nullable id responseObject))success
+      failure:(nullable void(^)(NSString* error))failure;
+
 @end
 
 NS_ASSUME_NONNULL_END
