@@ -7,6 +7,8 @@
 //
 
 #define BASE_URL @"https://exam.zfgo360.com"
+//@"http://192.168.100.62:8016"
+//@"https://exam.zfgo360.com"
 
 #import "CommonRequestHandler.h"
 
@@ -20,7 +22,7 @@ static AFHTTPSessionManager* httpManager;
         if (httpManager == nil) {
             NSURL *url = [NSURL URLWithString: BASE_URL];
             httpManager = [[AFHTTPSessionManager alloc] initWithBaseURL: url];
-            httpManager.requestSerializer.timeoutInterval = 10.0;
+            httpManager.requestSerializer.timeoutInterval = 120.0;
             httpManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:  @"application/json", @"text/html", @"text/xml", @"text/plain", @"application/xml", nil];
         }
     });
@@ -29,7 +31,7 @@ static AFHTTPSessionManager* httpManager;
 + (void)resetHttpManager{
     NSURL *url = [NSURL URLWithString: BASE_URL];
     httpManager = [[AFHTTPSessionManager alloc] initWithBaseURL: url];
-    httpManager.requestSerializer.timeoutInterval = 10.0;
+    httpManager.requestSerializer.timeoutInterval = 120.0;
     httpManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:  @"application/json", @"text/html", @"text/xml", @"text/plain", @"application/xml", nil];
 }
 
@@ -51,7 +53,7 @@ static AFHTTPSessionManager* httpManager;
             return;
         }
         
-        NSNumber *code = [responseObject objectForKey: @"Code"];
+        NSInteger code = [[responseObject objectForKey: @"Code"] integerValue];
         if (code > 0) {
             NSString *msg = [responseObject objectForKey: @"Msg"];
             if (msg != nil) {
@@ -87,7 +89,7 @@ static AFHTTPSessionManager* httpManager;
             return;
         }
         
-        NSNumber *code = [responseObject objectForKey: @"Code"];
+        NSInteger code = [[responseObject objectForKey: @"Code"] integerValue];
         if (code > 0) {
             NSString *msg = [responseObject objectForKey: @"Msg"];
             if (msg != nil) {
