@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFNetworking.h>
-#import <YYModel/YYModel.h>
 #import "JSONResponse.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -17,19 +16,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(void) initializeHttpManager;
 
++(void) setAuthorization:(NSString *)auth
+               withToken:(NSString *)token
+                 andUDID:(NSString *)udid;
+
 +(void) resetHttpManager;
 
 +(void)get:(NSString *)url
 withParams:(nullable id)parameters
-     class:(Class)Class
    success:(nullable void (^)(_Nullable id responseObject))success
-   failure:(nullable void (^)(NSError* error))failure;
+   failure:(nullable void (^)(NSString *error))failure;
 
 +(void)post:(NSString *)url
  withParams:(nullable id)parameters
-      class:(Class)Class
     success:(nullable void (^)(_Nullable id responseObject))success
-    failure:(nullable void (^)(NSError* error))failure;
+    failure:(nullable void (^)(NSString *error))failure;
 
 @end
 
