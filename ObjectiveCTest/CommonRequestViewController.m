@@ -20,6 +20,7 @@
 @property (nonatomic) UIButton *resetBtn;
 @property (nonatomic) UIButton *requestBtn;
 @property (nonatomic) UIButton *uploadBtn;
+@property (nonatomic) UIButton *tokenBtn;
 @property (nonatomic) NSMutableArray *moocArray;
 
 -(void) login;
@@ -36,13 +37,15 @@
 
 -(void) uploadAvatar;
 
+-(void) displayToken;
+
 @end
 
 @implementation CommonRequestViewController
 
 NSString *token = @"";
 
-@synthesize moocArray, loginBtn, resetBtn, requestBtn, uploadBtn;
+@synthesize moocArray, loginBtn, resetBtn, requestBtn, uploadBtn, tokenBtn;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -83,6 +86,12 @@ NSString *token = @"";
     [uploadBtn addTarget:self action:@selector(uploadAvatar) forControlEvents: UIControlEventTouchUpInside];
     [self.view addSubview:uploadBtn];
     
+    tokenBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 35)];
+    [tokenBtn setTitle:@"显示Token" forState:UIControlStateNormal];
+    [tokenBtn setTitleColor:[UIColor blueColor] forState: UIControlStateNormal];
+    [tokenBtn addTarget:self action:@selector(displayToken) forControlEvents: UIControlEventTouchUpInside];
+    [self.view addSubview:tokenBtn];
+    
     [loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_top).offset(100);
         make.centerX.equalTo(self.view.mas_centerX);
@@ -103,6 +112,12 @@ NSString *token = @"";
     
     [uploadBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.requestBtn.mas_bottom).offset(20);
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.height.equalTo(@35);
+    }];
+    
+    [tokenBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.uploadBtn.mas_bottom).offset(20);
         make.centerX.equalTo(self.view.mas_centerX);
         make.height.equalTo(@35);
     }];
@@ -194,6 +209,10 @@ NSString *token = @"";
     token = @"";
     [CommonRequestHandler resetHttpManager];
     NSLog(@"reset success");
+}
+
+-(void)displayToken{
+    NSLog(@"token is %@ now", token);
 }
 /*
 #pragma mark - Navigation

@@ -85,7 +85,7 @@ static AFHTTPSessionManager* httpManager;
     [httpManager POST:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (responseObject == nil ) {
-            failure(@"请求出错，没有返回任何数据");
+            failure(@"请求错误，没有返回任何数据");
             return;
         }
         
@@ -96,7 +96,7 @@ static AFHTTPSessionManager* httpManager;
                 failure([NSString stringWithFormat: @"请求错误，%@", msg]);
             }
             else{
-                failure(@"请求出错，未知的错误原因");
+                failure(@"请求错误，未知的错误原因");
             }
             return;
         }
@@ -104,6 +104,20 @@ static AFHTTPSessionManager* httpManager;
         success([responseObject objectForKey: @"Data"]);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (task != nil) {
+            NSHTTPURLResponse *response = [task response];
+            NSInteger statusCode = response.statusCode;
+            if (statusCode == 401) {
+                NSLog(@"status code is 401");
+            }
+            else if (statusCode == 500) {
+                NSLog(@"status code is 500");
+            }
+            else{
+                NSLog(@"status code is %ld", statusCode);
+            }
+        }
         
         if (error.domain) {
             NSLog(@"request error domain is %@", error.domain);
@@ -123,7 +137,7 @@ static AFHTTPSessionManager* httpManager;
     [httpManager POST:url parameters:parameters constructingBodyWithBlock:constructingBlock progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (responseObject == nil ) {
-            failure(@"请求出错，没有返回任何数据");
+            failure(@"请求错误，没有返回任何数据");
             return;
         }
         
@@ -134,7 +148,7 @@ static AFHTTPSessionManager* httpManager;
                 failure([NSString stringWithFormat: @"请求错误，%@", msg]);
             }
             else{
-                failure(@"请求出错，未知的错误原因");
+                failure(@"请求错误，未知的错误原因");
             }
             return;
         }
