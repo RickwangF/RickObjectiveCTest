@@ -7,5 +7,7 @@ target 'ObjectiveCTest' do
   pod 'AFNetworking', '~> 3.0'
   pod 'YYModel'
   pod 'Masonry'
+  pod 'AFNetworkActivityLogger'
+  pod 'YYCache'
 
 end

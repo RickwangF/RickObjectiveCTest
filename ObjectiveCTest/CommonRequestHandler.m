@@ -22,7 +22,7 @@ static AFHTTPSessionManager* httpManager;
         if (httpManager == nil) {
             NSURL *url = [NSURL URLWithString: BASE_URL];
             httpManager = [[AFHTTPSessionManager alloc] initWithBaseURL: url];
-            httpManager.requestSerializer.timeoutInterval = 120.0;
+            httpManager.requestSerializer.timeoutInterval = 15.0;
             httpManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:  @"application/json", @"text/html", @"text/xml", @"text/plain", @"application/xml", nil];
         }
     });

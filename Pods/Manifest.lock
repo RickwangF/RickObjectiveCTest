@@ -1,4 +1,6 @@
 PODS:
+  - AFNetworkActivityLogger (3.0.0):
+    - AFNetworking/NSURLSession (~> 3.0)
   - AFNetworking (3.2.1):
     - AFNetworking/NSURLSession (= 3.2.1)
     - AFNetworking/Reachability (= 3.2.1)
@@ -15,24 +17,31 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
+  - YYCache (1.0.4)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - AFNetworkActivityLogger
   - AFNetworking (~> 3.0)
   - Masonry
+  - YYCache
   - YYModel
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworkActivityLogger
     - AFNetworking
     - Masonry
+    - YYCache
     - YYModel
 
 SPEC CHECKSUMS:
+  AFNetworkActivityLogger: e77f68d014becb33c4306a23f56a64906ff72670
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 41332ef8296c736e8f03ed28ac243206e39195ed
+PODFILE CHECKSUM: 4bce6792bdc6fed038bd69c723f5230ef4d5a5a1
 
 COCOAPODS: 1.5.3

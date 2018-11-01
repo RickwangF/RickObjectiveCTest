@@ -50,6 +50,7 @@ NSString *token = @"";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [CommonRequestHandler initializeHttpManager];
+    [CommonRequestHandler setAuthorization:@"" withToken:@"" andUDID:@""];
     NSLog(@"httpManager initialize finished");
     moocArray = [[NSMutableArray alloc] init];
     [self initBtns];
@@ -77,7 +78,7 @@ NSString *token = @"";
     requestBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 35)];
     [requestBtn setTitle:@"请求" forState:UIControlStateNormal];
     [requestBtn setTitleColor:[UIColor blueColor] forState: UIControlStateNormal];
-    [requestBtn addTarget:self action:@selector(editRealName) forControlEvents: UIControlEventTouchUpInside];
+    [requestBtn addTarget:self action:@selector(moocList) forControlEvents: UIControlEventTouchUpInside];
     [self.view addSubview:requestBtn];
     
     uploadBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 35)];
