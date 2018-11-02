@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginResult : NSObject
 
-@property (nonatomic) NSString *Token;
+@property (nonatomic, copy) NSString *Token;
 @property (nonatomic) UserModel *UserModel;
 
 -(instancetype)init;

@@ -13,10 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginModel : NSObject
     
-@property (nonatomic) NSString *LoginName;
-@property (nonatomic) NSString *Password;
-@property (nonatomic) NSString *Client;
-@property (nonatomic) NSString *UDID;
+@property (nonatomic, copy) NSString *LoginName;
+@property (nonatomic, copy) NSString *Password;
+@property (nonatomic, copy) NSString *Client;
+@property (nonatomic, copy) NSString *UDID;
     
 -(instancetype)init;
     

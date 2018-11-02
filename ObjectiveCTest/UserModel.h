@@ -13,20 +13,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UserModel : NSObject
 
-@property (nonatomic) NSString *AreaCode;
+@property (nonatomic, copy) NSString *AreaCode;
 @property (nonatomic, assign) double AvailableDeposit;
-@property (nonatomic) NSString *AvatarUrl;
-@property (nonatomic) NSString *BirthDay;
+@property (nonatomic, copy) NSString *AvatarUrl;
+@property (nonatomic, copy) NSString *BirthDay;
 @property (nonatomic, assign) BOOL DestSelected;
-@property (nonatomic) NSString *Email;
+@property (nonatomic, copy) NSString *Email;
 @property (nonatomic,assign) BOOL EmailBind;
-@property (nonatomic) NSString *Gender;
+@property (nonatomic, copy) NSString *Gender;
 @property (nonatomic, assign) int Id;
-@property (nonatomic) NSString *LoginName;
-@property (nonatomic) NSString *Phone;
-@property (nonatomic, nullable) NSString* QQ;
-@property (nonatomic) NSString *RealName;
-@property (nonatomic, nullable) NSString *UDID;
+@property (nonatomic, copy) NSString *LoginName;
+@property (nonatomic, copy) NSString *Phone;
+@property (nonatomic, nullable, copy) NSString* QQ;
+@property (nonatomic, copy) NSString *RealName;
+@property (nonatomic, nullable, copy) NSString *UDID;
 
 -(instancetype)init;
 

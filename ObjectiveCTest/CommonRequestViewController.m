@@ -13,6 +13,7 @@
 #import "MoocModel.h"
 #import "LoginModel.h"
 #import "LoginResult.h"
+#import "DataCache.h"
 
 @interface CommonRequestViewController ()
 
@@ -22,6 +23,8 @@
 @property (nonatomic) UIButton *uploadBtn;
 @property (nonatomic) UIButton *tokenBtn;
 @property (nonatomic) NSMutableArray *moocArray;
+@property (nonatomic) UIButton *saveBtn;
+@property (nonatomic) UIButton *readBtn;
 
 -(void) login;
 
@@ -39,13 +42,17 @@
 
 -(void) displayToken;
 
+-(void) saveData;
+
+-(void) readData;
+
 @end
 
 @implementation CommonRequestViewController
 
 NSString *token = @"";
 
-@synthesize moocArray, loginBtn, resetBtn, requestBtn, uploadBtn, tokenBtn;
+@synthesize moocArray, loginBtn, resetBtn, requestBtn, uploadBtn, tokenBtn, saveBtn, readBtn;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -54,6 +61,7 @@ NSString *token = @"";
     NSLog(@"httpManager initialize finished");
     moocArray = [[NSMutableArray alloc] init];
     [self initBtns];
+    [DataCache initDataCache];
     // Do any additional setup after loading the view.
 }
 
@@ -93,6 +101,18 @@ NSString *token = @"";
     [tokenBtn addTarget:self action:@selector(displayToken) forControlEvents: UIControlEventTouchUpInside];
     [self.view addSubview:tokenBtn];
     
+    saveBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 35)];
+    [saveBtn setTitle:@"保存" forState:UIControlStateNormal];
+    [saveBtn setTitleColor:[UIColor blueColor] forState: UIControlStateNormal];
+    [saveBtn addTarget:self action:@selector(saveData) forControlEvents: UIControlEventTouchUpInside];
+    [self.view addSubview:saveBtn];
+    
+    readBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 35)];
+    [readBtn setTitle:@"读取" forState:UIControlStateNormal];
+    [readBtn setTitleColor:[UIColor blueColor] forState: UIControlStateNormal];
+    [readBtn addTarget:self action:@selector(readData) forControlEvents: UIControlEventTouchUpInside];
+    [self.view addSubview:readBtn];
+    
     [loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_top).offset(100);
         make.centerX.equalTo(self.view.mas_centerX);
@@ -119,6 +139,18 @@ NSString *token = @"";
     
     [tokenBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.uploadBtn.mas_bottom).offset(20);
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.height.equalTo(@35);
+    }];
+    
+    [saveBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.tokenBtn.mas_bottom).offset(20);
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.height.equalTo(@35);
+    }];
+    
+    [readBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.saveBtn.mas_bottom).offset(20);
         make.centerX.equalTo(self.view.mas_centerX);
         make.height.equalTo(@35);
     }];
@@ -215,6 +247,17 @@ NSString *token = @"";
 -(void)displayToken{
     NSLog(@"token is %@ now", token);
 }
+
+- (void)saveData{
+    [DataCache setData:@"Rick" withKey:@"vip"];
+    NSLog(@"dataCache save data success");
+}
+
+- (void)readData{
+    NSString *data = [DataCache getDataWithKey:@"vip"];
+    NSLog(@"data is %@", data);
+}
+
 /*
 #pragma mark - Navigation
 

@@ -15,6 +15,7 @@
 		0F264DAB2187F6D8008EF2D7 /* CommonRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F264DAA2187F6D8008EF2D7 /* CommonRequestViewController.m */; };
 		0F34AA3F218432FE00FBF938 /* AFNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F34AA3E218432FE00FBF938 /* AFNViewController.m */; };
 		0F34AA422184395400FBF938 /* JSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F34AA412184395400FBF938 /* JSONResponse.m */; };
+		0F7A10D3218BD846005EBD68 /* DataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A10D2218BD846005EBD68 /* DataCache.m */; };
 		0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48AD217579480042FD3C /* AppDelegate.m */; };
 		0F8C48B1217579480042FD3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48B0217579480042FD3C /* ViewController.m */; };
 		0F8C48B4217579480042FD3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B2217579480042FD3C /* Main.storyboard */; };
@@ -42,6 +43,8 @@
 		0F34AA3E218432FE00FBF938 /* AFNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNViewController.m; sourceTree = "<group>"; };
 		0F34AA402184395400FBF938 /* JSONResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONResponse.h; sourceTree = "<group>"; };
 		0F34AA412184395400FBF938 /* JSONResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONResponse.m; sourceTree = "<group>"; };
+		0F7A10D1218BD846005EBD68 /* DataCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataCache.h; sourceTree = "<group>"; };
+		0F7A10D2218BD846005EBD68 /* DataCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataCache.m; sourceTree = "<group>"; };
 		0F8C48A9217579480042FD3C /* ObjectiveCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8C48AC217579480042FD3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F8C48AD217579480042FD3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 				0F264DA72186F283008EF2D7 /* CommonRequestHandler.m */,
 				0F264DA92187F6D8008EF2D7 /* CommonRequestViewController.h */,
 				0F264DAA2187F6D8008EF2D7 /* CommonRequestViewController.m */,
+				0F7A10D1218BD846005EBD68 /* DataCache.h */,
+				0F7A10D2218BD846005EBD68 /* DataCache.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			files = (
 				0F264D9F2186D9DE008EF2D7 /* LoginResult.m in Sources */,
 				0F264DAB2187F6D8008EF2D7 /* CommonRequestViewController.m in Sources */,
+				0F7A10D3218BD846005EBD68 /* DataCache.m in Sources */,
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
 				0F264DA22186DC98008EF2D7 /* MoocContainerModel.m in Sources */,
 				0F34AA3F218432FE00FBF938 /* AFNViewController.m in Sources */,
