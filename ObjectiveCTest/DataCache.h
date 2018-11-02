@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(void) setData:(id)data withKey:(NSString*)key;
 
++(BOOL) setData:(id)data withReturnAndKey:(NSString*)key;
+
 @end
 
 NS_ASSUME_NONNULL_END
