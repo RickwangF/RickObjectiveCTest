@@ -14,8 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *LoginName;
 @property (nonatomic, assign) BOOL Available;
+@property (nonatomic) void(^block)(void);
 
 -(instancetype)init;
+
+-(void) printLoginName;
 
 -(BOOL) testBlock;
 

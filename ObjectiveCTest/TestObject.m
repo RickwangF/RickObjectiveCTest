@@ -32,6 +32,10 @@
     return flag;
 }
 
+-(void)printLoginName{
+    NSLog(@"LoginName is %@", _LoginName);
+}
+
 - (void)testReturnWithBlock:(void (^)(void))block{    
     block();
 }
