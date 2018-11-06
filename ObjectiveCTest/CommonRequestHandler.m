@@ -6,7 +6,7 @@
 //  Copyright © 2018 KMZJ. All rights reserved.
 //
 
-#define BASE_URL @"https://exam.zfgo360.com"
+#define BASE_URL @"http://192.168.100.62:8016"
 //@"http://192.168.100.62:8016"
 //@"https://exam.zfgo360.com"
 
@@ -24,6 +24,7 @@ static AFHTTPSessionManager* httpManager;
             httpManager = [[AFHTTPSessionManager alloc] initWithBaseURL: url];
             httpManager.requestSerializer.timeoutInterval = 15.0;
             httpManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:  @"application/json", @"text/html", @"text/xml", @"text/plain", @"application/xml", nil];
+            httpManager.responseSerializer.acceptableStatusCodes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(200, 104)];
         }
     });
 }
@@ -33,6 +34,7 @@ static AFHTTPSessionManager* httpManager;
     httpManager = [[AFHTTPSessionManager alloc] initWithBaseURL: url];
     httpManager.requestSerializer.timeoutInterval = 120.0;
     httpManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:  @"application/json", @"text/html", @"text/xml", @"text/plain", @"application/xml", nil];
+    httpManager.responseSerializer.acceptableStatusCodes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(200, 104)];
 }
 
 + (void)setAuthorization:(NSString *)auth withToken:(NSString *)token andUDID:(NSString *)udid{
@@ -68,6 +70,20 @@ static AFHTTPSessionManager* httpManager;
         success([responseObject objectForKey: @"Data"]);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (task != nil) {
+            NSHTTPURLResponse *response = [task response];
+            NSInteger statusCode = response.statusCode;
+            if (statusCode == 401) {
+                NSLog(@"status code is 401");
+            }
+            else if (statusCode == 500) {
+                NSLog(@"status code is 500");
+            }
+            else{
+                NSLog(@"status code is %ld", statusCode);
+            }
+        }
         
         if (error.domain) {
             NSLog(@"request error domain is %@", error.domain);
@@ -156,6 +172,20 @@ static AFHTTPSessionManager* httpManager;
         success([responseObject objectForKey: @"Data"]);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (task != nil) {
+            NSHTTPURLResponse *response = [task response];
+            NSInteger statusCode = response.statusCode;
+            if (statusCode == 401) {
+                NSLog(@"status code is 401");
+            }
+            else if (statusCode == 500) {
+                NSLog(@"status code is 500");
+            }
+            else{
+                NSLog(@"status code is %ld", statusCode);
+            }
+        }
         
         if (error.domain) {
             NSLog(@"request error domain is %@", error.domain);

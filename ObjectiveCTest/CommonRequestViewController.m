@@ -200,7 +200,7 @@ NSString *token = @"";
         [self printMoocArray];
         
     } failure:^(NSString * _Nonnull error) {
-        NSLog(@"get request fail with a error, %@", error);
+        NSLog(@"moocList request fail with a error, %@", error);
     }];
 }
 
