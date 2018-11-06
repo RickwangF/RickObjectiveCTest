@@ -13,6 +13,9 @@
 		0F8C48B6217579490042FD3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B5217579490042FD3C /* Assets.xcassets */; };
 		0F8C48B9217579490042FD3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B7217579490042FD3C /* LaunchScreen.storyboard */; };
 		0F8C48BC217579490042FD3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48BB217579490042FD3C /* main.m */; };
+		0FD81397219163A7004F986C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD81396219163A7004F986C /* Person.m */; };
+		0FD8139A21916924004F986C /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8139921916924004F986C /* People.m */; };
+		0FD8139D21916EF0004F986C /* TransmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8139C21916EF0004F986C /* TransmitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		0F8C48B8217579490042FD3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F8C48BA217579490042FD3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F8C48BB217579490042FD3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FD81395219163A7004F986C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0FD81396219163A7004F986C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		0FD8139821916924004F986C /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		0FD8139921916924004F986C /* People.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		0FD8139B21916EF0004F986C /* TransmitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransmitViewController.h; sourceTree = "<group>"; };
+		0FD8139C21916EF0004F986C /* TransmitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransmitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,12 @@
 				0F8C48B7217579490042FD3C /* LaunchScreen.storyboard */,
 				0F8C48BA217579490042FD3C /* Info.plist */,
 				0F8C48BB217579490042FD3C /* main.m */,
+				0FD81395219163A7004F986C /* Person.h */,
+				0FD81396219163A7004F986C /* Person.m */,
+				0FD8139821916924004F986C /* People.h */,
+				0FD8139921916924004F986C /* People.m */,
+				0FD8139B21916EF0004F986C /* TransmitViewController.h */,
+				0FD8139C21916EF0004F986C /* TransmitViewController.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -141,8 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD8139D21916EF0004F986C /* TransmitViewController.m in Sources */,
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
+				0FD8139A21916924004F986C /* People.m in Sources */,
+				0FD81397219163A7004F986C /* Person.m in Sources */,
 				0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
