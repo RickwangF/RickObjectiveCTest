@@ -1,0 +1,6 @@
+framework module Pods_ObjectiveCTest {
+  umbrella header "Pods-ObjectiveCTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

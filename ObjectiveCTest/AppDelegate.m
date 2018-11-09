@@ -17,6 +17,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 黑色背景，白色的标题字体
+    [UINavigationBar appearance].barStyle = UIBarStyleBlack;
+    
+    // 白色背景，黑色的标题字体
+    [UINavigationBar appearance].barStyle = UIBarStyleDefault;
+    
+    // 设置导航条为不透明
+    [UINavigationBar appearance].translucent = NO;
+    
+    // 设置导航条中可交互控件的按钮标题字体颜色，按钮图片的颜色
+    [UINavigationBar appearance].tintColor = [UIColor orangeColor];
+    
+    // 设置导航条的背景颜色
+    [UINavigationBar appearance].barTintColor = [UIColor purpleColor];
+    
+    // 设置导航条的标题的颜色，字体大小，文字阴影颜色，阴影的偏移量等
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor redColor];
+    shadow.shadowOffset = CGSizeMake(10, 10);
+    
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor greenColor], NSFontAttributeName: [UIFont systemFontOfSize:20 weight:UIFontWeightBold], NSShadowAttributeName: shadow};
+    
+    // 设置导航条标题的垂直对齐,第一个参数是y轴的偏移量，向下偏移是正值，向上的负值
+    [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:-20.0 forBarMetrics:UIBarMetricsDefault];
+    
     return YES;
 }
 
