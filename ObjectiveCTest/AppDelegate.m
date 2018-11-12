@@ -19,12 +19,12 @@
     // Override point for customization after application launch.
     
     // 黑色背景，白色的标题字体
-    [UINavigationBar appearance].barStyle = UIBarStyleBlack;
+    //[UINavigationBar appearance].barStyle = UIBarStyleBlack;
     
     // 白色背景，黑色的标题字体
     [UINavigationBar appearance].barStyle = UIBarStyleDefault;
     
-    // 设置导航条为不透明
+    // 设置导航条为不透明，取消半透明效果
 //    [UINavigationBar appearance].translucent = NO;
     
     // 设置导航条中可交互控件的按钮标题字体颜色，按钮图片的颜色
@@ -32,6 +32,11 @@
     
     // 设置导航条的背景颜色
 //    [UINavigationBar appearance].barTintColor = [UIColor purpleColor];
+    
+    // 设置导航条的backBarButtonItem的图片
+    [UINavigationBar appearance].backIndicatorImage = [UIImage imageNamed:@"backcube_25#ff.png"];
+    // 导航条push和pop过渡动画时当作mask显示的图片
+    [UINavigationBar appearance].backIndicatorTransitionMaskImage = [UIImage imageNamed:@"backcube_25#ff.png"];
     
     // 设置导航条的标题的颜色，字体大小，文字阴影颜色，阴影的偏移量等
     NSShadow *shadow = [[NSShadow alloc] init];
@@ -42,12 +47,18 @@
     
     // 设置导航条标题的垂直对齐,第一个参数是y轴的偏移量，向下偏移是正值，向上的负值
     // UIBarMetricsDefault 正常竖屏状态，UIBarMetricsCompact 横屏状态
-    [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:-10.0 forBarMetrics:UIBarMetricsDefault];
+//    [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:-10.0 forBarMetrics:UIBarMetricsDefault];
     
     // 设置导航条的背景图片，可伸缩的图片会被自动拉伸到导航条实际尺寸
     // UIBarMetricsDefault 设置的背景图片在横竖屏都显示
     // UIBarMetricsCompact 设置的背景图片只有在横屏下才显示
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"translucentbg.jpg"] forBarMetrics:UIBarMetricsDefault];
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"translucentbg.jpg"] forBarMetrics:UIBarMetricsDefault];
+    
+    // 设置导航条的背景图片，使用给定的导航条位置和标准
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bg_20.jpg"] forBarPosition:UIBarPositionTopAttached barMetrics: UIBarMetricsDefault];
+    
+    // 设置导航条的阴影图片，设置为一个没有尺寸的UIImage能隐藏默认的阴影横线
+//    [[UINavigationBar appearance] setShadowImage: [UIImage new]];
     
 //    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"40_heigh.png"] forBarPosition: UIBarPositionAny barMetrics: UIBarMetricsDefault];
     
