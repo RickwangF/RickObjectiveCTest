@@ -11,6 +11,7 @@
 		0F4318C1219913400075B95B /* PushedOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4318C0219913400075B95B /* PushedOneViewController.m */; };
 		0F4318C421996D270075B95B /* UIImage+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4318C321996D270075B95B /* UIImage+UIColor.m */; };
 		0F4318C7219973FC0075B95B /* PushedTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4318C6219973FC0075B95B /* PushedTwoViewController.m */; };
+		0F4318CA2199A31B0075B95B /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4318C92199A31B0075B95B /* SearchResultViewController.m */; };
 		0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48AD217579480042FD3C /* AppDelegate.m */; };
 		0F8C48B1217579480042FD3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48B0217579480042FD3C /* ViewController.m */; };
 		0F8C48B4217579480042FD3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B2217579480042FD3C /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 		0F4318C321996D270075B95B /* UIImage+UIColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIColor.m"; sourceTree = "<group>"; };
 		0F4318C5219973FC0075B95B /* PushedTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushedTwoViewController.h; sourceTree = "<group>"; };
 		0F4318C6219973FC0075B95B /* PushedTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushedTwoViewController.m; sourceTree = "<group>"; };
+		0F4318C82199A31B0075B95B /* SearchResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultViewController.h; sourceTree = "<group>"; };
+		0F4318C92199A31B0075B95B /* SearchResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewController.m; sourceTree = "<group>"; };
 		0F8C48A9217579480042FD3C /* ObjectiveCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8C48AC217579480042FD3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F8C48AD217579480042FD3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				0F4318C321996D270075B95B /* UIImage+UIColor.m */,
 				0F4318C5219973FC0075B95B /* PushedTwoViewController.h */,
 				0F4318C6219973FC0075B95B /* PushedTwoViewController.m */,
+				0F4318C82199A31B0075B95B /* SearchResultViewController.h */,
+				0F4318C92199A31B0075B95B /* SearchResultViewController.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
 				0F4318C1219913400075B95B /* PushedOneViewController.m in Sources */,
+				0F4318CA2199A31B0075B95B /* SearchResultViewController.m in Sources */,
 				0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */,
 				0F4318C421996D270075B95B /* UIImage+UIColor.m in Sources */,
 			);

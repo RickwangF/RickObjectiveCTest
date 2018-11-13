@@ -1,5 +1,5 @@
 //
-//  PushedTwoViewController.h
+//  SearchResultViewController.h
 //  ObjectiveCTest
 //
 //  Created by Rick Wang on 2018/11/12.
@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PushedTwoViewController : UIViewController<UISearchControllerDelegate, UISearchResultsUpdating>
+@interface SearchResultViewController : UITableViewController
+
+@property (nonatomic) NSMutableArray *dataArray;
 
 @end
 
