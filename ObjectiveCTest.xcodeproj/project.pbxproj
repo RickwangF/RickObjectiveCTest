@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0E3CAA83F06400520D432885 /* Pods_ObjectiveCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978D903E1941CFA2C154BB93 /* Pods_ObjectiveCTest.framework */; };
+		0F18176A219A7C7D003CC117 /* PushedThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F181769219A7C7D003CC117 /* PushedThreeViewController.m */; };
+		0F18176D219AAD35003CC117 /* LeftImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F18176C219AAD35003CC117 /* LeftImageButton.m */; };
+		0F181770219BAAB3003CC117 /* PushedFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F18176F219BAAB3003CC117 /* PushedFourViewController.m */; };
 		0F4318C1219913400075B95B /* PushedOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4318C0219913400075B95B /* PushedOneViewController.m */; };
 		0F4318C421996D270075B95B /* UIImage+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4318C321996D270075B95B /* UIImage+UIColor.m */; };
 		0F4318C7219973FC0075B95B /* PushedTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4318C6219973FC0075B95B /* PushedTwoViewController.m */; };
@@ -21,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F181768219A7C7D003CC117 /* PushedThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushedThreeViewController.h; sourceTree = "<group>"; };
+		0F181769219A7C7D003CC117 /* PushedThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushedThreeViewController.m; sourceTree = "<group>"; };
+		0F18176B219AAD35003CC117 /* LeftImageButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftImageButton.h; sourceTree = "<group>"; };
+		0F18176C219AAD35003CC117 /* LeftImageButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftImageButton.m; sourceTree = "<group>"; };
+		0F18176E219BAAB3003CC117 /* PushedFourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushedFourViewController.h; sourceTree = "<group>"; };
+		0F18176F219BAAB3003CC117 /* PushedFourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushedFourViewController.m; sourceTree = "<group>"; };
 		0F4318BF219913400075B95B /* PushedOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushedOneViewController.h; sourceTree = "<group>"; };
 		0F4318C0219913400075B95B /* PushedOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushedOneViewController.m; sourceTree = "<group>"; };
 		0F4318C221996D270075B95B /* UIImage+UIColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIColor.h"; sourceTree = "<group>"; };
@@ -94,6 +103,12 @@
 				0F4318C6219973FC0075B95B /* PushedTwoViewController.m */,
 				0F4318C82199A31B0075B95B /* SearchResultViewController.h */,
 				0F4318C92199A31B0075B95B /* SearchResultViewController.m */,
+				0F181768219A7C7D003CC117 /* PushedThreeViewController.h */,
+				0F181769219A7C7D003CC117 /* PushedThreeViewController.m */,
+				0F18176B219AAD35003CC117 /* LeftImageButton.h */,
+				0F18176C219AAD35003CC117 /* LeftImageButton.m */,
+				0F18176E219BAAB3003CC117 /* PushedFourViewController.h */,
+				0F18176F219BAAB3003CC117 /* PushedFourViewController.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -227,11 +242,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F4318C7219973FC0075B95B /* PushedTwoViewController.m in Sources */,
+				0F181770219BAAB3003CC117 /* PushedFourViewController.m in Sources */,
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
+				0F18176D219AAD35003CC117 /* LeftImageButton.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
 				0F4318C1219913400075B95B /* PushedOneViewController.m in Sources */,
 				0F4318CA2199A31B0075B95B /* SearchResultViewController.m in Sources */,
 				0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */,
+				0F18176A219A7C7D003CC117 /* PushedThreeViewController.m in Sources */,
 				0F4318C421996D270075B95B /* UIImage+UIColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
