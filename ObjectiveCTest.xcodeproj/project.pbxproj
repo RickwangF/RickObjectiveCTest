@@ -11,6 +11,7 @@
 		0F18176A219A7C7D003CC117 /* PushedThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F181769219A7C7D003CC117 /* PushedThreeViewController.m */; };
 		0F18176D219AAD35003CC117 /* LeftImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F18176C219AAD35003CC117 /* LeftImageButton.m */; };
 		0F181770219BAAB3003CC117 /* PushedFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F18176F219BAAB3003CC117 /* PushedFourViewController.m */; };
+		0F181773219BB11D003CC117 /* RightImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F181772219BB11D003CC117 /* RightImageButton.m */; };
 		0F4318C1219913400075B95B /* PushedOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4318C0219913400075B95B /* PushedOneViewController.m */; };
 		0F4318C421996D270075B95B /* UIImage+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4318C321996D270075B95B /* UIImage+UIColor.m */; };
 		0F4318C7219973FC0075B95B /* PushedTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4318C6219973FC0075B95B /* PushedTwoViewController.m */; };
@@ -30,6 +31,8 @@
 		0F18176C219AAD35003CC117 /* LeftImageButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftImageButton.m; sourceTree = "<group>"; };
 		0F18176E219BAAB3003CC117 /* PushedFourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushedFourViewController.h; sourceTree = "<group>"; };
 		0F18176F219BAAB3003CC117 /* PushedFourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushedFourViewController.m; sourceTree = "<group>"; };
+		0F181771219BB11D003CC117 /* RightImageButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RightImageButton.h; sourceTree = "<group>"; };
+		0F181772219BB11D003CC117 /* RightImageButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RightImageButton.m; sourceTree = "<group>"; };
 		0F4318BF219913400075B95B /* PushedOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushedOneViewController.h; sourceTree = "<group>"; };
 		0F4318C0219913400075B95B /* PushedOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushedOneViewController.m; sourceTree = "<group>"; };
 		0F4318C221996D270075B95B /* UIImage+UIColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIColor.h"; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				0F18176C219AAD35003CC117 /* LeftImageButton.m */,
 				0F18176E219BAAB3003CC117 /* PushedFourViewController.h */,
 				0F18176F219BAAB3003CC117 /* PushedFourViewController.m */,
+				0F181771219BB11D003CC117 /* RightImageButton.h */,
+				0F181772219BB11D003CC117 /* RightImageButton.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F181773219BB11D003CC117 /* RightImageButton.m in Sources */,
 				0F4318C7219973FC0075B95B /* PushedTwoViewController.m in Sources */,
 				0F181770219BAAB3003CC117 /* PushedFourViewController.m in Sources */,
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,

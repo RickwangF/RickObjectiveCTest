@@ -108,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="1071.2" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Pushed Four View Controller-->
         <scene sceneID="PH2-jg-dGI">
             <objects>
-                <viewController id="3EJ-gI-AQG" sceneMemberID="viewController">
+                <viewController id="3EJ-gI-AQG" customClass="PushedFourViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rGf-mT-dPM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

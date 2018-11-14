@@ -2,42 +2,13 @@
 //  RightImageButton.m
 //  ObjectiveCTest
 //
-//  Created by Rick Wang on 2018/11/13.
+//  Created by Rick Wang on 2018/11/14.
 //  Copyright © 2018 KMZJ. All rights reserved.
 //
 
-#import "LeftImageButton.h"
-#import <Masonry/Masonry.h>
+#import "RightImageButton.h"
 
-/*
- 图片在左边的按钮
- */
-
-@implementation LeftImageButton
-
-- (instancetype)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame];
-    CGFloat height = frame.size.height;
-    CGFloat width = frame.size.width;
-    // 假设width > height
-    self.imageView.frame = CGRectMake(0, 0, height, height);
-    self.titleLabel.frame = CGRectMake(height, 0, width-height, height);
-    return self;
-}
-
--(UIEdgeInsets)alignmentRectInsets{
-    return UIEdgeInsetsMake(0, 8, 0, -8);
-}
-
--(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
-    CGFloat height = self.bounds.size.height;
-    CGFloat width = self.bounds.size.width;
-    if ((point.x >= -15.0 || point.x <= width) && (point.y >=0 || point.y <= height)) {
-        NSLog(@"pint is (%f,%f)", point.x, point.y);
-        return YES;
-    }
-    return NO;
-}
+@implementation RightImageButton
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -46,5 +17,14 @@
     // Drawing code
 }
 */
+
+/*
+ 对齐矩形相对于Frame水平向左移动8pt，Frame相对于对齐矩形水平向右移动了8pt
+ 若设置按钮的右边距约束为-8pt，即距屏幕右边框8pt，则Frame的右边贴近屏幕并且距离为0
+ */
+
+-(UIEdgeInsets)alignmentRectInsets{
+    return UIEdgeInsetsMake(0, -8, 0, 8);
+}
 
 @end

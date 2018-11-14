@@ -15,16 +15,11 @@
 
 @implementation LeftImageButton
 
-- (instancetype)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame];
-    CGFloat height = frame.size.height;
-    CGFloat width = frame.size.width;
-    // 假设width > height
-    self.imageView.frame = CGRectMake(0, 0, height, height);
-    self.titleLabel.frame = CGRectMake(height, 0, width-height, height);
-    return self;
-}
-
+/*
+ 对齐矩形相对于Frame水平向右移动了8个pt，Frame相对于对齐矩形向左移动了8个pt
+ 在设置按钮左边对齐约束时，若距屏幕左边框8pt，则frame的origin.x则为0
+ 若距屏幕左边框0pt，则frame左侧会被切掉8pt
+ */
 -(UIEdgeInsets)alignmentRectInsets{
     return UIEdgeInsetsMake(0, 8, 0, -8);
 }
@@ -32,7 +27,7 @@
 -(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
     CGFloat height = self.bounds.size.height;
     CGFloat width = self.bounds.size.width;
-    if ((point.x >= -15.0 || point.x <= width) && (point.y >=0 || point.y <= height)) {
+    if ((point.x >= -8.0 || point.x <= width) && (point.y >=0 || point.y <= height)) {
         NSLog(@"pint is (%f,%f)", point.x, point.y);
         return YES;
     }
