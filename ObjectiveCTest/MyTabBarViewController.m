@@ -9,6 +9,7 @@
 #import "MyTabBarViewController.h"
 #import "OneViewController.h"
 #import "TwoViewController.h"
+#import "CustomTabBar.h"
 
 @interface MyTabBarViewController ()
 
@@ -36,15 +37,22 @@
     // 初始化一个Dic设置UITabBarItem title的Attributes
     NSMutableDictionary *attrs = [[NSMutableDictionary alloc] init];
     attrs[NSFontAttributeName] = [UIFont systemFontOfSize:14];
-    attrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
+    // 设置tabBarItem的字体颜色和未选中图片的颜色一致
+    attrs[NSForegroundColorAttributeName] = [UIColor colorWithRed:112.0/255 green:112.0/255 blue:112.0/255 alpha:1.0];
+    
     // 初始化一个Dic设置UITabBarItem title的selected Attributes
     NSMutableDictionary *selectAttrs = [[NSMutableDictionary alloc] init];
     selectAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:16];
+    // 设置tabBarItem的字体颜色和选中图片的颜色一致
     selectAttrs[NSForegroundColorAttributeName] = [UIColor colorWithRed:55.0/255 green:228.0/255 blue:24.0/255 alpha:1.0];
     // 统一设置实例的外观
     [appearance setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [appearance setTitleTextAttributes:selectAttrs forState:UIControlStateSelected];
     // Do any additional setup after loading the view.
+    
+    // 设置自定义的UITabBar
+    CustomTabBar *customTabBar = [[CustomTabBar alloc] init];
+    [self setValue:customTabBar forKey: @"tabBar"];
     
     // 初始化ViewControllers
     [self initViewControllers];
