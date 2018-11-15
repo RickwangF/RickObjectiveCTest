@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F181776219CFD1A003CC117 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F181775219CFD1A003CC117 /* OneViewController.m */; };
+		0F181779219CFD27003CC117 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F181778219CFD26003CC117 /* TwoViewController.m */; };
 		0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48AD217579480042FD3C /* AppDelegate.m */; };
 		0F8C48B1217579480042FD3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48B0217579480042FD3C /* ViewController.m */; };
 		0F8C48B4217579480042FD3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B2217579480042FD3C /* Main.storyboard */; };
 		0F8C48B6217579490042FD3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B5217579490042FD3C /* Assets.xcassets */; };
 		0F8C48B9217579490042FD3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B7217579490042FD3C /* LaunchScreen.storyboard */; };
 		0F8C48BC217579490042FD3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48BB217579490042FD3C /* main.m */; };
+		0FA40ACB219D3BDF0064C455 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA40ACA219D3BDF0064C455 /* MyTabBarViewController.m */; };
 		D2237E67AEA2F8BC6EA1E9B0 /* Pods_ObjectiveCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF21E06C4D2400F2AC00A3A1 /* Pods_ObjectiveCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F181774219CFD1A003CC117 /* OneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		0F181775219CFD1A003CC117 /* OneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		0F181777219CFD26003CC117 /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		0F181778219CFD26003CC117 /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		0F8C48A9217579480042FD3C /* ObjectiveCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8C48AC217579480042FD3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F8C48AD217579480042FD3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,6 +34,8 @@
 		0F8C48B8217579490042FD3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F8C48BA217579490042FD3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F8C48BB217579490042FD3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FA40AC9219D3BDF0064C455 /* MyTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTabBarViewController.h; sourceTree = "<group>"; };
+		0FA40ACA219D3BDF0064C455 /* MyTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTabBarViewController.m; sourceTree = "<group>"; };
 		84C09E0CD40C2EDFFB2EF5EA /* Pods-ObjectiveCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCTest/Pods-ObjectiveCTest.release.xcconfig"; sourceTree = "<group>"; };
 		C477345B1F91C8FB9264AD53 /* Pods-ObjectiveCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveCTest/Pods-ObjectiveCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		EF21E06C4D2400F2AC00A3A1 /* Pods_ObjectiveCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectiveCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +83,12 @@
 				0F8C48B7217579490042FD3C /* LaunchScreen.storyboard */,
 				0F8C48BA217579490042FD3C /* Info.plist */,
 				0F8C48BB217579490042FD3C /* main.m */,
+				0F181774219CFD1A003CC117 /* OneViewController.h */,
+				0F181775219CFD1A003CC117 /* OneViewController.m */,
+				0F181777219CFD26003CC117 /* TwoViewController.h */,
+				0F181778219CFD26003CC117 /* TwoViewController.m */,
+				0FA40AC9219D3BDF0064C455 /* MyTabBarViewController.h */,
+				0FA40ACA219D3BDF0064C455 /* MyTabBarViewController.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -209,6 +224,9 @@
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
 				0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */,
+				0F181779219CFD27003CC117 /* TwoViewController.m in Sources */,
+				0FA40ACB219D3BDF0064C455 /* MyTabBarViewController.m in Sources */,
+				0F181776219CFD1A003CC117 /* OneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

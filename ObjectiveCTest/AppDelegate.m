@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MyTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,55 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // 创建一个主窗口
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = UIScreen.mainScreen.bounds;
+    // 初始化自定义的UITabBarController
+    MyTabBarViewController *myTabBarVC = [[MyTabBarViewController alloc] init];
+    self.window.rootViewController = myTabBarVC;
+    [self.window makeKeyAndVisible];
+    
+    // 初始化tabbarController和要加入他的VC
+    //UITabBarController *tabVC = [[UITabBarController alloc] init];
+    //OneViewController *oneVC = [[OneViewController alloc] init];
+    //TwoViewController *twoVC = [[TwoViewController alloc] init];
+    // 初始化一张Image，并设置其渲染模式为AlwaysOriginal，为了防止系统将其修改成蓝色
+    //UIImage *imageOneSelected = [[UIImage imageNamed:@"solidhome_25#green.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //UIImage *imageOne = [UIImage imageNamed:@"home_25#70.png"];
+    // 初始化一个tabbarItem，并设置其标题，未选中的图片，选中的图片
+    //UITabBarItem *oneTabItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:imageOne selectedImage:imageOneSelected];
+    // 设置tabbarItem的标题的特性，此处只设置了字体的颜色
+    //[oneTabItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:55.0/255 green:228.0/255 blue:24.0/255 alpha:1.0]} forState:UIControlStateSelected];
+    
+    // 设置tabBarItem的title的偏移量,水平方向正为right，垂直方向正为bottom
+    //oneTabItem.titlePositionAdjustment = UIOffsetMake(20, 10);
+    
+    // 设置标记的数值
+    //oneTabItem.badgeValue = @"1";
+    
+    // 设置标记的颜色
+//    oneTabItem.badgeColor = [UIColor colorWithRed:55.0/255 green:228.0/255 blue:24.0/255 alpha:1.0];
+    
+    // 根据状态设置标记的文字特性
+//    [oneTabItem setBadgeTextAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:40], NSForegroundColorAttributeName: [UIColor blueColor]} forState:UIControlStateNormal];
+    
+    
+//    UIImage *imageTwoSelected = [[UIImage imageNamed:@"solidmine_25#green"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    UIImage *imageTwo = [UIImage imageNamed:@"mine_25#70.png"];
+//    UITabBarItem *twoTabItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:imageTwo selectedImage:imageTwoSelected];
+//
+//    [twoTabItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:55.0/255 green:228.0/255 blue:24.0/255 alpha:1.0]} forState:UIControlStateSelected];
+//
+//    // 将创建好的tabbarItem赋值给ViewController的tabBarItem属性
+//    oneVC.tabBarItem = oneTabItem;
+//    twoVC.tabBarItem = twoTabItem;
+//    // 设置tabbarController的viewControllers属性
+//    tabVC.viewControllers = @[oneVC, twoVC];
+//    // 设置初始选择的控制器
+//    tabVC.selectedViewController = oneVC;
+//    self.window.rootViewController = tabVC;
+//    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
