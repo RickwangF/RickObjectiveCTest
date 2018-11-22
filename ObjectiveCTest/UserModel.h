@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UserModel : NSObject
+@interface UserModel : NSObject{
+    NSString *_UserName;
+}
 
 @property (nonatomic, copy) NSString *UserName;
 
@@ -19,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(instancetype)init;
 
 -(void) PrintUserName;
+
+
 
 @end
 

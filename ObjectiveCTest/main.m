@@ -15,8 +15,8 @@
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         
-        UserModel *userModel = [[UserModel alloc] init];
-        [userModel PrintUserName];
+//        UserModel *userModel = [[UserModel alloc] init];
+//        [userModel PrintUserName];
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

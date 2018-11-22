@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserModel.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    UserModel *_userModel;
+}
 
 
 @end

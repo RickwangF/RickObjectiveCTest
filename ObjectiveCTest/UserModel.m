@@ -19,13 +19,26 @@
     return self;
 }
 
-
 // Lazy init
 -(NSString*)UserName{
     if (_UserName == nil) {
         _UserName = @"Rick";
     }
     return _UserName;
+}
+
+-(void)setUserName:(NSString *)UserName{
+    if (![_UserName isEqualToString:UserName]) {
+        _UserName = UserName;
+    }
+}
+
+// Lazy init
+-(NSInteger)Age{
+    if (_Age == 0){
+        _Age = 28;
+    }
+    return _Age;
 }
 
 - (void)PrintUserName{
