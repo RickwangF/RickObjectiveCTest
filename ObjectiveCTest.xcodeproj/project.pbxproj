@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F329ADE21AF7B97002546E4 /* SubLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329ADD21AF7B97002546E4 /* SubLayerViewController.m */; };
+		0F329AE121AF84EE002546E4 /* DrawLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AE021AF84EE002546E4 /* DrawLayerViewController.m */; };
+		0F329AE421AF8510002546E4 /* MyLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AE321AF8510002546E4 /* MyLayer.m */; };
 		0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48AD217579480042FD3C /* AppDelegate.m */; };
 		0F8C48B1217579480042FD3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48B0217579480042FD3C /* ViewController.m */; };
 		0F8C48B4217579480042FD3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B2217579480042FD3C /* Main.storyboard */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F329ADC21AF7B97002546E4 /* SubLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubLayerViewController.h; sourceTree = "<group>"; };
+		0F329ADD21AF7B97002546E4 /* SubLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubLayerViewController.m; sourceTree = "<group>"; };
+		0F329ADF21AF84EE002546E4 /* DrawLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawLayerViewController.h; sourceTree = "<group>"; };
+		0F329AE021AF84EE002546E4 /* DrawLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawLayerViewController.m; sourceTree = "<group>"; };
+		0F329AE221AF8510002546E4 /* MyLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLayer.h; sourceTree = "<group>"; };
+		0F329AE321AF8510002546E4 /* MyLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLayer.m; sourceTree = "<group>"; };
 		0F8C48A9217579480042FD3C /* ObjectiveCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8C48AC217579480042FD3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F8C48AD217579480042FD3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +76,12 @@
 				0F8C48B7217579490042FD3C /* LaunchScreen.storyboard */,
 				0F8C48BA217579490042FD3C /* Info.plist */,
 				0F8C48BB217579490042FD3C /* main.m */,
+				0F329ADC21AF7B97002546E4 /* SubLayerViewController.h */,
+				0F329ADD21AF7B97002546E4 /* SubLayerViewController.m */,
+				0F329ADF21AF84EE002546E4 /* DrawLayerViewController.h */,
+				0F329AE021AF84EE002546E4 /* DrawLayerViewController.m */,
+				0F329AE221AF8510002546E4 /* MyLayer.h */,
+				0F329AE321AF8510002546E4 /* MyLayer.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -142,6 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
+				0F329AE121AF84EE002546E4 /* DrawLayerViewController.m in Sources */,
+				0F329ADE21AF7B97002546E4 /* SubLayerViewController.m in Sources */,
+				0F329AE421AF8510002546E4 /* MyLayer.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
 				0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */,
 			);
