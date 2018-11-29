@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F329AE721AFB937002546E4 /* FillRectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AE621AFB937002546E4 /* FillRectangleView.m */; };
+		0F329AEA21AFBD93002546E4 /* StrokeRectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AE921AFBD93002546E4 /* StrokeRectangleView.m */; };
+		0F329AED21AFC242002546E4 /* RoundedRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AEC21AFC242002546E4 /* RoundedRectView.m */; };
+		0F329AF021AFC62B002546E4 /* OvalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AEF21AFC62B002546E4 /* OvalView.m */; };
+		0F329AF321AFCDA6002546E4 /* FullArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AF221AFCDA6002546E4 /* FullArcView.m */; };
+		0F329AF921AFD4A4002546E4 /* RoundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AF821AFD4A4002546E4 /* RoundImage.m */; };
+		0F329AFC21AFD4D7002546E4 /* UIImage+Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AFB21AFD4D7002546E4 /* UIImage+Round.m */; };
+		0F329AFF21AFDFBD002546E4 /* RoundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AFE21AFDFBD002546E4 /* RoundImageView.m */; };
 		0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48AD217579480042FD3C /* AppDelegate.m */; };
 		0F8C48B1217579480042FD3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48B0217579480042FD3C /* ViewController.m */; };
 		0F8C48B4217579480042FD3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B2217579480042FD3C /* Main.storyboard */; };
@@ -16,6 +24,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F329AE521AFB937002546E4 /* FillRectangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FillRectangleView.h; sourceTree = "<group>"; };
+		0F329AE621AFB937002546E4 /* FillRectangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FillRectangleView.m; sourceTree = "<group>"; };
+		0F329AE821AFBD93002546E4 /* StrokeRectangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrokeRectangleView.h; sourceTree = "<group>"; };
+		0F329AE921AFBD93002546E4 /* StrokeRectangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrokeRectangleView.m; sourceTree = "<group>"; };
+		0F329AEB21AFC242002546E4 /* RoundedRectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundedRectView.h; sourceTree = "<group>"; };
+		0F329AEC21AFC242002546E4 /* RoundedRectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundedRectView.m; sourceTree = "<group>"; };
+		0F329AEE21AFC62B002546E4 /* OvalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OvalView.h; sourceTree = "<group>"; };
+		0F329AEF21AFC62B002546E4 /* OvalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OvalView.m; sourceTree = "<group>"; };
+		0F329AF121AFCDA6002546E4 /* FullArcView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullArcView.h; sourceTree = "<group>"; };
+		0F329AF221AFCDA6002546E4 /* FullArcView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FullArcView.m; sourceTree = "<group>"; };
+		0F329AF721AFD4A4002546E4 /* RoundImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundImage.h; sourceTree = "<group>"; };
+		0F329AF821AFD4A4002546E4 /* RoundImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundImage.m; sourceTree = "<group>"; };
+		0F329AFA21AFD4D6002546E4 /* UIImage+Round.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Round.h"; sourceTree = "<group>"; };
+		0F329AFB21AFD4D7002546E4 /* UIImage+Round.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Round.m"; sourceTree = "<group>"; };
+		0F329AFD21AFDFBD002546E4 /* RoundImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundImageView.h; sourceTree = "<group>"; };
+		0F329AFE21AFDFBD002546E4 /* RoundImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundImageView.m; sourceTree = "<group>"; };
 		0F8C48A9217579480042FD3C /* ObjectiveCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8C48AC217579480042FD3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F8C48AD217579480042FD3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +91,22 @@
 				0F8C48B7217579490042FD3C /* LaunchScreen.storyboard */,
 				0F8C48BA217579490042FD3C /* Info.plist */,
 				0F8C48BB217579490042FD3C /* main.m */,
+				0F329AE521AFB937002546E4 /* FillRectangleView.h */,
+				0F329AE621AFB937002546E4 /* FillRectangleView.m */,
+				0F329AE821AFBD93002546E4 /* StrokeRectangleView.h */,
+				0F329AE921AFBD93002546E4 /* StrokeRectangleView.m */,
+				0F329AEB21AFC242002546E4 /* RoundedRectView.h */,
+				0F329AEC21AFC242002546E4 /* RoundedRectView.m */,
+				0F329AEE21AFC62B002546E4 /* OvalView.h */,
+				0F329AEF21AFC62B002546E4 /* OvalView.m */,
+				0F329AF121AFCDA6002546E4 /* FullArcView.h */,
+				0F329AF221AFCDA6002546E4 /* FullArcView.m */,
+				0F329AF721AFD4A4002546E4 /* RoundImage.h */,
+				0F329AF821AFD4A4002546E4 /* RoundImage.m */,
+				0F329AFA21AFD4D6002546E4 /* UIImage+Round.h */,
+				0F329AFB21AFD4D7002546E4 /* UIImage+Round.m */,
+				0F329AFD21AFDFBD002546E4 /* RoundImageView.h */,
+				0F329AFE21AFDFBD002546E4 /* RoundImageView.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -141,7 +181,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F329AFC21AFD4D7002546E4 /* UIImage+Round.m in Sources */,
+				0F329AF021AFC62B002546E4 /* OvalView.m in Sources */,
+				0F329AEA21AFBD93002546E4 /* StrokeRectangleView.m in Sources */,
+				0F329AFF21AFDFBD002546E4 /* RoundImageView.m in Sources */,
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
+				0F329AED21AFC242002546E4 /* RoundedRectView.m in Sources */,
+				0F329AF921AFD4A4002546E4 /* RoundImage.m in Sources */,
+				0F329AF321AFCDA6002546E4 /* FullArcView.m in Sources */,
+				0F329AE721AFB937002546E4 /* FillRectangleView.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
 				0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */,
 			);
