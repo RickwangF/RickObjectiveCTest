@@ -14,6 +14,7 @@
 #import "FullArcView.h"
 #import "UIImage+Round.h"
 #import "RoundImageView.h"
+#import "PolygonView.h"
 
 @interface ViewController ()
 
@@ -27,8 +28,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.originX = self.view.frame.size.width / 2 - 100;
-    self.originY = self.view.frame.size.height / 2 - 100;
+    self.originX = self.view.frame.size.width / 2 - 200;
+    self.originY = self.view.frame.size.height / 2 - 173.2;
     
 //    [self initFillRectangleView];
 //    [self initStrokeRectangleView];
@@ -37,7 +38,8 @@
 //    [self initFullArcView];
 //    [self initImageView];
 //    [self initRoundImageView];
-    [self initCornerRadiusImageView];
+//    [self initCornerRadiusImageView];
+    [self initPolygonView];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -77,7 +79,6 @@
 
 -(void) initRoundImageView{
     RoundImageView *roundImageView = [[RoundImageView alloc] initWithFrame:CGRectMake(self.originX, self.originY, 200, 200)];
-    roundImageView.image = [UIImage imageNamed:@"daye"];
     [self.view addSubview:roundImageView];
 }
 
@@ -85,6 +86,11 @@
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.originX, self.originY, 200, 200)];
     imageView.image = [[UIImage imageNamed:@"daye"] cornerRadiusImage];
     [self.view addSubview:imageView];
+}
+
+-(void) initPolygonView{
+    PolygonView *polygonView = [[PolygonView alloc] initWithFrame:CGRectMake(self.originX, self.originY, 400, 346.4)];
+    [self.view addSubview:polygonView];
 }
 
 @end

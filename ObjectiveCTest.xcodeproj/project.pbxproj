@@ -15,6 +15,7 @@
 		0F329AF921AFD4A4002546E4 /* RoundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AF821AFD4A4002546E4 /* RoundImage.m */; };
 		0F329AFC21AFD4D7002546E4 /* UIImage+Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AFB21AFD4D7002546E4 /* UIImage+Round.m */; };
 		0F329AFF21AFDFBD002546E4 /* RoundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AFE21AFDFBD002546E4 /* RoundImageView.m */; };
+		0F329B0221B0C4D8002546E4 /* PolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329B0121B0C4D8002546E4 /* PolygonView.m */; };
 		0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48AD217579480042FD3C /* AppDelegate.m */; };
 		0F8C48B1217579480042FD3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48B0217579480042FD3C /* ViewController.m */; };
 		0F8C48B4217579480042FD3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B2217579480042FD3C /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 		0F329AFB21AFD4D7002546E4 /* UIImage+Round.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Round.m"; sourceTree = "<group>"; };
 		0F329AFD21AFDFBD002546E4 /* RoundImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundImageView.h; sourceTree = "<group>"; };
 		0F329AFE21AFDFBD002546E4 /* RoundImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundImageView.m; sourceTree = "<group>"; };
+		0F329B0021B0C4D8002546E4 /* PolygonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolygonView.h; sourceTree = "<group>"; };
+		0F329B0121B0C4D8002546E4 /* PolygonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolygonView.m; sourceTree = "<group>"; };
 		0F8C48A9217579480042FD3C /* ObjectiveCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8C48AC217579480042FD3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F8C48AD217579480042FD3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				0F329AFB21AFD4D7002546E4 /* UIImage+Round.m */,
 				0F329AFD21AFDFBD002546E4 /* RoundImageView.h */,
 				0F329AFE21AFDFBD002546E4 /* RoundImageView.m */,
+				0F329B0021B0C4D8002546E4 /* PolygonView.h */,
+				0F329B0121B0C4D8002546E4 /* PolygonView.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				0F329AE721AFB937002546E4 /* FillRectangleView.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
 				0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */,
+				0F329B0221B0C4D8002546E4 /* PolygonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

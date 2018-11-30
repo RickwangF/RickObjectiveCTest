@@ -28,24 +28,4 @@
     return self;
 }
 
-
-- (void)drawRect:(CGRect)rect {
-    CGFloat height = rect.size.height;
-    CGFloat width = rect.size.width;
-    
-    if (width != height) {
-        if (width > height) {
-            width = height;
-        }
-        else{
-            height = width;
-        }
-    }
-    
-    if (self.image == nil) {
-        return;
-    }
-}
-
-
 @end
