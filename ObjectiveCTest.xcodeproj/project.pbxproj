@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F2D419C21C285620016B9D3 /* ShadowTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2D419B21C285620016B9D3 /* ShadowTestViewController.m */; };
+		0F2D419F21C285D60016B9D3 /* ShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2D419E21C285D60016B9D3 /* ShadowView.m */; };
 		0F329ADE21AF7B97002546E4 /* SubLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329ADD21AF7B97002546E4 /* SubLayerViewController.m */; };
 		0F329AE121AF84EE002546E4 /* DrawLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AE021AF84EE002546E4 /* DrawLayerViewController.m */; };
 		0F329AE421AF8510002546E4 /* MyLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AE321AF8510002546E4 /* MyLayer.m */; };
@@ -19,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F2D419A21C285620016B9D3 /* ShadowTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowTestViewController.h; sourceTree = "<group>"; };
+		0F2D419B21C285620016B9D3 /* ShadowTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowTestViewController.m; sourceTree = "<group>"; };
+		0F2D419D21C285D60016B9D3 /* ShadowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowView.h; sourceTree = "<group>"; };
+		0F2D419E21C285D60016B9D3 /* ShadowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowView.m; sourceTree = "<group>"; };
 		0F329ADC21AF7B97002546E4 /* SubLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubLayerViewController.h; sourceTree = "<group>"; };
 		0F329ADD21AF7B97002546E4 /* SubLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubLayerViewController.m; sourceTree = "<group>"; };
 		0F329ADF21AF84EE002546E4 /* DrawLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawLayerViewController.h; sourceTree = "<group>"; };
@@ -82,6 +88,10 @@
 				0F329AE021AF84EE002546E4 /* DrawLayerViewController.m */,
 				0F329AE221AF8510002546E4 /* MyLayer.h */,
 				0F329AE321AF8510002546E4 /* MyLayer.m */,
+				0F2D419A21C285620016B9D3 /* ShadowTestViewController.h */,
+				0F2D419B21C285620016B9D3 /* ShadowTestViewController.m */,
+				0F2D419D21C285D60016B9D3 /* ShadowView.h */,
+				0F2D419E21C285D60016B9D3 /* ShadowView.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -156,9 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F2D419F21C285D60016B9D3 /* ShadowView.m in Sources */,
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
 				0F329AE121AF84EE002546E4 /* DrawLayerViewController.m in Sources */,
 				0F329ADE21AF7B97002546E4 /* SubLayerViewController.m in Sources */,
+				0F2D419C21C285620016B9D3 /* ShadowTestViewController.m in Sources */,
 				0F329AE421AF8510002546E4 /* MyLayer.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
 				0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */,
