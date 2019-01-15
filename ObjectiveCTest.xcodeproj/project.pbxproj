@@ -22,6 +22,7 @@
 		0F8C48B6217579490042FD3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B5217579490042FD3C /* Assets.xcassets */; };
 		0F8C48B9217579490042FD3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B7217579490042FD3C /* LaunchScreen.storyboard */; };
 		0F8C48BC217579490042FD3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48BB217579490042FD3C /* main.m */; };
+		0FE8B16521D0A83A00AF75A4 /* StackPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8B16421D0A83A00AF75A4 /* StackPathView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		0F8C48B8217579490042FD3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F8C48BA217579490042FD3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F8C48BB217579490042FD3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FE8B16321D0A83A00AF75A4 /* StackPathView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackPathView.h; sourceTree = "<group>"; };
+		0FE8B16421D0A83A00AF75A4 /* StackPathView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackPathView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				0F329AFE21AFDFBD002546E4 /* RoundImageView.m */,
 				0F329B0021B0C4D8002546E4 /* PolygonView.h */,
 				0F329B0121B0C4D8002546E4 /* PolygonView.m */,
+				0FE8B16321D0A83A00AF75A4 /* StackPathView.h */,
+				0FE8B16421D0A83A00AF75A4 /* StackPathView.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			files = (
 				0F329AFC21AFD4D7002546E4 /* UIImage+Round.m in Sources */,
 				0F329AF021AFC62B002546E4 /* OvalView.m in Sources */,
+				0FE8B16521D0A83A00AF75A4 /* StackPathView.m in Sources */,
 				0F329AEA21AFBD93002546E4 /* StrokeRectangleView.m in Sources */,
 				0F329AFF21AFDFBD002546E4 /* RoundImageView.m in Sources */,
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,

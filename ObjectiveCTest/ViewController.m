@@ -15,6 +15,7 @@
 #import "UIImage+Round.h"
 #import "RoundImageView.h"
 #import "PolygonView.h"
+#import "StackPathView.h"
 
 @interface ViewController ()
 
@@ -28,8 +29,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.originX = self.view.frame.size.width / 2 - 200;
-    self.originY = self.view.frame.size.height / 2 - 173.2;
+    self.originX = self.view.frame.size.width / 2 - 150;
+    self.originY = self.view.frame.size.height / 2 - 150;
     
 //    [self initFillRectangleView];
 //    [self initStrokeRectangleView];
@@ -39,7 +40,8 @@
 //    [self initImageView];
 //    [self initRoundImageView];
 //    [self initCornerRadiusImageView];
-    [self initPolygonView];
+//    [self initPolygonView];
+	[self initStackPathView];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -91,6 +93,11 @@
 -(void) initPolygonView{
     PolygonView *polygonView = [[PolygonView alloc] initWithFrame:CGRectMake(self.originX, self.originY, 400, 346.4)];
     [self.view addSubview:polygonView];
+}
+
+- (void)initStackPathView{
+	StackPathView *stackPathView = [[StackPathView alloc] initWithFrame:CGRectMake(self.originX, self.originY, 300, 300)];
+	[self.view addSubview:stackPathView];
 }
 
 @end
