@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F2FAB3221F0639A00E6BB83 /* ArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2FAB3121F0639A00E6BB83 /* ArrowView.m */; };
 		0F329AE721AFB937002546E4 /* FillRectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AE621AFB937002546E4 /* FillRectangleView.m */; };
 		0F329AEA21AFBD93002546E4 /* StrokeRectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AE921AFBD93002546E4 /* StrokeRectangleView.m */; };
 		0F329AED21AFC242002546E4 /* RoundedRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AEC21AFC242002546E4 /* RoundedRectView.m */; };
@@ -16,6 +17,7 @@
 		0F329AFC21AFD4D7002546E4 /* UIImage+Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AFB21AFD4D7002546E4 /* UIImage+Round.m */; };
 		0F329AFF21AFDFBD002546E4 /* RoundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329AFE21AFDFBD002546E4 /* RoundImageView.m */; };
 		0F329B0221B0C4D8002546E4 /* PolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F329B0121B0C4D8002546E4 /* PolygonView.m */; };
+		0F5604FB21F0723000C955C8 /* TriangleRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5604FA21F0723000C955C8 /* TriangleRectView.m */; };
 		0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48AD217579480042FD3C /* AppDelegate.m */; };
 		0F8C48B1217579480042FD3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C48B0217579480042FD3C /* ViewController.m */; };
 		0F8C48B4217579480042FD3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C48B2217579480042FD3C /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F2FAB3021F0639A00E6BB83 /* ArrowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrowView.h; sourceTree = "<group>"; };
+		0F2FAB3121F0639A00E6BB83 /* ArrowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrowView.m; sourceTree = "<group>"; };
 		0F329AE521AFB937002546E4 /* FillRectangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FillRectangleView.h; sourceTree = "<group>"; };
 		0F329AE621AFB937002546E4 /* FillRectangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FillRectangleView.m; sourceTree = "<group>"; };
 		0F329AE821AFBD93002546E4 /* StrokeRectangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrokeRectangleView.h; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 		0F329AFE21AFDFBD002546E4 /* RoundImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundImageView.m; sourceTree = "<group>"; };
 		0F329B0021B0C4D8002546E4 /* PolygonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolygonView.h; sourceTree = "<group>"; };
 		0F329B0121B0C4D8002546E4 /* PolygonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolygonView.m; sourceTree = "<group>"; };
+		0F5604F921F0723000C955C8 /* TriangleRectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleRectView.h; sourceTree = "<group>"; };
+		0F5604FA21F0723000C955C8 /* TriangleRectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleRectView.m; sourceTree = "<group>"; };
 		0F8C48A9217579480042FD3C /* ObjectiveCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8C48AC217579480042FD3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F8C48AD217579480042FD3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +123,10 @@
 				0F329B0121B0C4D8002546E4 /* PolygonView.m */,
 				0FE8B16321D0A83A00AF75A4 /* StackPathView.h */,
 				0FE8B16421D0A83A00AF75A4 /* StackPathView.m */,
+				0F2FAB3021F0639A00E6BB83 /* ArrowView.h */,
+				0F2FAB3121F0639A00E6BB83 /* ArrowView.m */,
+				0F5604F921F0723000C955C8 /* TriangleRectView.h */,
+				0F5604FA21F0723000C955C8 /* TriangleRectView.m */,
 			);
 			path = ObjectiveCTest;
 			sourceTree = "<group>";
@@ -197,9 +207,11 @@
 				0F329AEA21AFBD93002546E4 /* StrokeRectangleView.m in Sources */,
 				0F329AFF21AFDFBD002546E4 /* RoundImageView.m in Sources */,
 				0F8C48B1217579480042FD3C /* ViewController.m in Sources */,
+				0F2FAB3221F0639A00E6BB83 /* ArrowView.m in Sources */,
 				0F329AED21AFC242002546E4 /* RoundedRectView.m in Sources */,
 				0F329AF921AFD4A4002546E4 /* RoundImage.m in Sources */,
 				0F329AF321AFCDA6002546E4 /* FullArcView.m in Sources */,
+				0F5604FB21F0723000C955C8 /* TriangleRectView.m in Sources */,
 				0F329AE721AFB937002546E4 /* FillRectangleView.m in Sources */,
 				0F8C48BC217579490042FD3C /* main.m in Sources */,
 				0F8C48AE217579480042FD3C /* AppDelegate.m in Sources */,

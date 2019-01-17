@@ -16,6 +16,8 @@
 #import "RoundImageView.h"
 #import "PolygonView.h"
 #import "StackPathView.h"
+#import "ArrowView.h"
+#import "TriangleRectView.h"
 
 @interface ViewController ()
 
@@ -29,8 +31,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.originX = self.view.frame.size.width / 2 - 150;
-    self.originY = self.view.frame.size.height / 2 - 150;
+    self.originX = self.view.frame.size.width / 2 - 100;
+    self.originY = self.view.frame.size.height / 2 - 50;
     
 //    [self initFillRectangleView];
 //    [self initStrokeRectangleView];
@@ -41,7 +43,10 @@
 //    [self initRoundImageView];
 //    [self initCornerRadiusImageView];
 //    [self initPolygonView];
-	[self initStackPathView];
+//	  [self initStackPathView];
+	[self initArrowView];
+	
+	[self initTriangleRectView];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -98,6 +103,18 @@
 - (void)initStackPathView{
 	StackPathView *stackPathView = [[StackPathView alloc] initWithFrame:CGRectMake(self.originX, self.originY, 300, 300)];
 	[self.view addSubview:stackPathView];
+}
+
+- (void)initArrowView{
+	ArrowView *arrowView = [[ArrowView alloc] initWithFrame:CGRectMake(_originX, _originY, 200, 100)];
+	arrowView.backgroundColor = UIColor.clearColor;
+	[self.view addSubview:arrowView];
+}
+
+- (void)initTriangleRectView{
+	TriangleRectView *rectView = [[TriangleRectView alloc] initWithFrame:CGRectMake(_originX, _originY - 110, 200, 100)];
+	rectView.backgroundColor = UIColor.clearColor;
+	[self.view addSubview:rectView];
 }
 
 @end
